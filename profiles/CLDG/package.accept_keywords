@@ -1,0 +1,4 @@
+# required by net-wireless/rtl88x2bu (argument)
+=net-wireless/rtl88x2bu-20220523 ~amd64
+# required by sys-power/power-profiles-daemon (argument)
+=sys-power/power-profiles-daemon-0.11.1 ~amd64

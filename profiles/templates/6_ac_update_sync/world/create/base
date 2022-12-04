@@ -1,0 +1,11 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, calculate)!=#
+app-editors/nano
+media-fonts/terminus-font
+sys-apps/busybox
+sys-apps/calculate-toolkit
+sys-apps/ifplugd
+sys-apps/less
+sys-kernel/dracut
+#in#

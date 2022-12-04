@@ -1,0 +1,87 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-arch/lbzip2
+app-arch/pigz
+app-misc/tmux
+app-text/tree
+net-misc/dhcp
+sys-auth/pam_update
+sys-fs/btrfs-progs
+sys-fs/cryptsetup
+sys-fs/f2fs-tools
+sys-fs/reiserfsprogs
+sys-fs/xfsprogs
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-admin/logrotate
+app-admin/syslog-ng
+sys-apps/ethtool
+sys-apps/usbutils
+sys-process/cronie
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-editors/vim
+app-vim/colorschemes
+sys-apps/inxi
+sys-fs/mdadm
+sys-process/htop
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-admin/hddtemp
+app-admin/sudo
+app-admin/testdisk
+app-cdr/cdrtools
+app-cdr/dvd+rw-tools
+app-misc/mc
+app-portage/portage-utils
+sys-apps/acl
+sys-apps/dmidecode
+sys-apps/lm-sensors
+sys-apps/memtest86+
+sys-apps/pciutils
+sys-apps/pv
+sys-apps/smartmontools
+sys-fs/dmraid
+sys-fs/dosfstools
+sys-fs/mtools
+sys-fs/ncdu
+sys-process/lsof
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-arch/p7zip
+app-arch/rar
+app-arch/unzip
+sys-apps/hdparm
+sys-apps/keyexec
+sys-apps/pcmciautils
+sys-apps/usb_modeswitch
+sys-fs/exfatprogs
+sys-fs/ntfs3g
+sys-power/acpi
+sys-power/acpid
+sys-power/cpupower
+sys-power/powernowd
+sys-power/powertop
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+sys-power/upower
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-pda/usbmuxd
+dev-python/gst-python
+sys-block/gparted
+#для корректной поддержки мультимедиа клавиатур
+x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-portage/cpuid2cpuflags
+app-misc/resolve-march-native
+#in#

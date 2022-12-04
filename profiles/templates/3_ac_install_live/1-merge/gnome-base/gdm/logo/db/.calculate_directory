@@ -1,0 +1,1 @@
+# Calculate pkg(gnome-base/gnome-shell)>=40.0&&pkg(gnome-base/dconf)>=0.40.0 path=/etc/dconf

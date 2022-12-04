@@ -1,0 +1,13 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-misc/xorg-meta
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-i18n/uim
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+x11-misc/lightdm
+#in#

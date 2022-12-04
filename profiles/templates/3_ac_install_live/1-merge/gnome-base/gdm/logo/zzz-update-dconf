@@ -1,0 +1,6 @@
+# Calculate pkg(gnome-base/dconf)>=0.40.0 exec=/bin/bash
+
+# Обновление dconf
+/usr/bin/dconf update
+
+true

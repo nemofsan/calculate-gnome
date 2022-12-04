@@ -1,0 +1,3 @@
+# Calculate Linux Gnome
+USE="-systemd -consolekit"
+THEMES="CLDG"

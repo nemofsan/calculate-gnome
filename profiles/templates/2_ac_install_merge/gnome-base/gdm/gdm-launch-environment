@@ -1,0 +1,23 @@
+# Calculate
+#%PAM-1.0
+
+auth        required    pam_succeed_if.so audit quiet_success user = gdm
+auth        required    pam_env.so
+auth        optional    pam_permit.so
+
+account     required    pam_succeed_if.so audit quiet_success user = gdm
+account     optional    pam_permit.so
+
+password    required    pam_deny.so
+
+session     optional    pam_loginuid.so
+session     optional    pam_keyinit.so force revoke
+session     required    pam_succeed_if.so audit quiet_success user = gdm
+
+session     optional    pam_permit.so
+#?pkg(sys-apps/systemd)!=#
+-session    optional    pam_systemd.so
+#pkg#
+#?pkg(sys-auth/elogind)!=#
+-session    optional    pam_elogind.so
+#pkg#

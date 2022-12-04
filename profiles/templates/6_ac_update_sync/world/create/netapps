@@ -1,0 +1,22 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDG)!=#
+app-text/wgetpaste
+net-analyzer/nmap
+net-analyzer/traceroute
+net-dns/bind-tools
+net-misc/ntp
+net-misc/whois
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+www-client/firefox
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+net-im/gajim
+net-misc/remmina
+net-p2p/transmission
+x11-misc/x11vnc
+#in#
+

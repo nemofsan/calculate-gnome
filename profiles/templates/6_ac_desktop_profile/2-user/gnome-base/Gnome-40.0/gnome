@@ -1,0 +1,156 @@
+# Calculate format=dconf dconf=/org/gnome
+
+[desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Sound & Video', 'Graphics', 'Internet', 'Office', 'System Tools', 'Accessories', 'Settings']
+
+[desktop/app-folders/folders/Accessories]
+apps=['org.gnome.Extensions.desktop', 'org.gnome.Weather.desktop']
+categories=['Utility']
+name='Utility.directory'
+translate=true
+
+[desktop/app-folders/folders/Graphics]
+apps=['zzz-gimp.desktop', 'org.fontforge.FontForge.desktop', 'shotwell.desktop']
+categories=['Graphics']
+name='Graphics.directory'
+translate=true
+
+[desktop/app-folders/folders/Internet]
+apps=['org.gnome.Epiphany.desktop', 'org.gajim.Gajim.desktop', 'transmission-gtk.desktop', 'org.remmina.Remmina.desktop', 'spicy-spice-gtk.desktop']
+categories=['Network']
+name='Network.directory'
+translate=true
+
+[desktop/app-folders/folders/Office]
+apps=['FBReader.desktop', 'libreoffice-base.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-writer.desktop', 'org.gnome.Contacts.desktop', 'gucharmap.desktop']
+categories=['Office']
+name='Office.directory'
+translate=true
+
+[desktop/app-folders/folders/Settings]
+apps=['Gentoo-system-config-printer.desktop', 'org.gnome.Settings.desktop', 'cl-console-gui.desktop', 'nm-connection-editor.desktop']
+categories=['Settings']
+name='SystemSettings.directory'
+translate=true
+
+[desktop/app-folders/folders/Sound & Video]
+apps=['brasero.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.SoundJuicer.desktop']
+categories=['AudioVideo']
+name='AudioVideo.directory'
+translate=true
+
+[desktop/app-folders/folders/System Tools]
+apps=['gparted.desktop', 'cpu-x-root.desktop', 'cpu-x.desktop', 'virt-manager.desktop', 'ca.desrt.dconf-editor.desktop']
+categories=['System']
+name='System-Tools.directory'
+translate=true
+
+[desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'gnome-system-monitor.desktop', 'simple-scan.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/calculate/Calculate%20Linux%2011%20Blue.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/calculate/Calculate%20Linux%2011%20Brown.jpg'
+primary-color='#000000'
+secondary-color='#000000'
+
+[desktop/input-sources]
+sources=[('xkb', 'us'), ('xkb', 'ru')]
+xkb-options=['grp:alt_shift_toggle']
+
+[desktop/interface]
+color-scheme='prefer-dark'
+cursor-theme='Adwaita'
+enable-animations=true
+font-antialiasing='grayscale'
+font-hinting='slight'
+gtk-theme='Adwaita-dark'
+icon-theme='Adwaita'
+
+[desktop/privacy]
+disable-microphone=false
+
+[desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/calculate/Calculate%20Linux%2015.jpg'
+primary-color='#000000'
+secondary-color='#000000'
+
+[desktop/session]
+idle-delay=uint32 900
+
+[desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+[gedit/preferences/editor]
+scheme='oblivion'
+wrap-last-split-mode='word'
+
+[shell]
+app-picker-layout=[{'Sound & Video': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System Tools': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]
+disable-user-extensions=false
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'tweaks-system-menu@extensions.gnome-shell.fifi.org', 'applications-overview-tooltip@RaphaelRochet', 'ControlBlurEffectOnLockScreen@pratap.fastmail.fm', 'dash-to-dock@micxgx.gmail.com', 'MaximizeToEmptyWorkspace-extension@kaisersite.de', 'no-overview@fthx', 'ding@rastersoft.com', 'RemoveAppMenu@Dragon8oy.com', 'blur-my-shell@aunetx']
+favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Polari.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Music.desktop', 'org.gnome.Totem.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'cl-console-gui-update.desktop']
+
+[shell/extensions/blur-my-shell/applications]
+blur=false
+
+[shell/extensions/blur-my-shell/dash-to-dock]
+blur=false
+
+[shell/extensions/blur-my-shell/overview]
+blur=true
+brightness=0.80000000000000004
+customize=true
+style-components=1
+
+[shell/extensions/blur-my-shell/panel]
+blur=true
+brightness=0.68000000000000005
+customize=true
+override-background-dynamically=true
+static-blur=true
+style-panel=0
+unblur-dynamically=true
+unblur-in-overview=false
+
+[shell/extensions/dash-to-dock]
+apply-custom-theme=false
+background-opacity=0.80000000000000004
+custom-background-color=false
+custom-theme-shrink=true
+dash-max-icon-size=42
+dock-position='BOTTOM'
+height-fraction=0.90000000000000002
+preferred-monitor=-2
+show-apps-at-top=false
+transparency-mode='DYNAMIC'
+
+[shell/extensions/dash-to-panel]
+available-monitors=[0]
+
+[shell/extensions/ding]
+show-home=false
+show-trash=false
+show-volumes=false
+
+[shell/extensions/shutdowntimer-deminder]
+preferences-selected-page-value=4
+shutdown-timestamp-value=-1
+
+[terminal/legacy]
+theme-variant='dark'
+
+[tweaks]
+show-extensions-notice=false

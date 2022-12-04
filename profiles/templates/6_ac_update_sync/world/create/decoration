@@ -1,0 +1,23 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDG)!=#
+media-gfx/grub-splashes-calculate
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+media-fonts/noto-emoji
+media-gfx/calculate-wallpapers
+media-gfx/dm-themes-calculate
+media-gfx/splash-themes-calculate
+x11-themes/calculate-icon-theme
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+media-gfx/lightdm-themes-calculate
+x11-themes/adwaita-qt
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+x11-misc/qt5ct
+#in#
+

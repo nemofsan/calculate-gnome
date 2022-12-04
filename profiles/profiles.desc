@@ -1,0 +1,13 @@
+#############################################
+# This is a list of valid profiles for each architecture.  This file is used by
+# repoman when doing a repoman scan or repoman full.
+# DO NOT ADD PROFILES WITH A "die" or "exit" IN THEM OR IT KILLS REPOMAN
+#
+#layout:
+#arch		profile_directory				status
+
+
+# AMD64 Profiles
+amd64		CLDG/amd64/20					stable
+
+# vim: set ts=8

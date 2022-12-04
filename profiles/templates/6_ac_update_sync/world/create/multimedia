@@ -1,0 +1,8 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDG)!=#
+media-plugins/alsa-plugins
+media-sound/alsa-utils
+media-sound/bluez-alsa
+sys-firmware/sof-firmware
+#in#
