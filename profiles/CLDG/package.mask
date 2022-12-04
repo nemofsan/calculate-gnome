@@ -3,3 +3,11 @@
 
 # x11-terms/gnome-terminal
 >=x11-terms/gnome-terminal-3.46.3
+
+#virtual/rust (required for www-client/firefox-107.0.1)
+>=virtual/rust-1.65.0-r1
+
+#net-misc/yandex-disk
+=net-misc/yandex-disk-0.1.5.1039_p1
+=net-misc/yandex-disk-0.1.6.1074_p1
+
