@@ -2,3 +2,4 @@
 =net-wireless/rtl88x2bu-20220523 ~amd64
 # required by sys-power/power-profiles-daemon (argument)
 =sys-power/power-profiles-daemon-0.11.1 ~amd64
+=sys-power/power-profiles-daemon-0.12 ~amd64
