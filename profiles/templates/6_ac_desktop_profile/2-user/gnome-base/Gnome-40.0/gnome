@@ -100,7 +100,7 @@ wrap-last-split-mode='word'
 [shell]
 app-picker-layout=[{'Sound & Video': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System Tools': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]
 disable-user-extensions=false
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'tweaks-system-menu@extensions.gnome-shell.fifi.org', 'applications-overview-tooltip@RaphaelRochet', 'ControlBlurEffectOnLockScreen@pratap.fastmail.fm', 'dash-to-dock@micxgx.gmail.com', 'MaximizeToEmptyWorkspace-extension@kaisersite.de', 'no-overview@fthx', 'ding@rastersoft.com', 'RemoveAppMenu@Dragon8oy.com', 'blur-my-shell@aunetx']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'tweaks-system-menu@extensions.gnome-shell.fifi.org', 'applications-overview-tooltip@RaphaelRochet', 'ControlBlurEffectOnLockScreen@pratap.fastmail.fm', 'dash-to-dock@micxgx.gmail.com', 'MaximizeToEmptyWorkspace-extension@kaisersite.de', 'no-overview@fthx', 'ding@rastersoft.com', 'RemoveAppMenu@Dragon8oy.com', 'sound-output-device-chooser@kgshank.net', 'blur-my-shell@aunetx']
 favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Polari.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Music.desktop', 'org.gnome.Totem.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'cl-console-gui-update.desktop']
 
 [shell/extensions/blur-my-shell/applications]
@@ -137,17 +137,17 @@ preferred-monitor=-2
 show-apps-at-top=false
 transparency-mode='DYNAMIC'
 
-[shell/extensions/dash-to-panel]
-available-monitors=[0]
-
 [shell/extensions/ding]
 show-home=false
 show-trash=false
 show-volumes=false
 
-[shell/extensions/shutdowntimer-deminder]
-preferences-selected-page-value=4
-shutdown-timestamp-value=-1
+[shell/extensions/sound-output-device-chooser]
+expand-volume-menu=false
+hide-on-single-device=false
+integrate-with-slider=true
+omit-device-origins=false
+show-profiles=true
 
 [terminal/legacy]
 theme-variant='dark'

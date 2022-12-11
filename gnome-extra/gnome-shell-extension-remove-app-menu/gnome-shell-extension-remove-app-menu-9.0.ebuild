@@ -27,13 +27,15 @@ BDEPEND=""
 S="${WORKDIR}/${MY_P}"
 extension_uuid="RemoveAppMenu@Dragon8oy.com"
 
-src_prepare() {
-        eapply "${FILESDIR}"/remove-app-menu-makefile-9.0.patch
-        eapply_user
-}
+# Not useful for us
+src_compile() { :; }
 
 src_install() {
-	default
+	einstalldocs
+	rm -f README.md clean-svgs.py Makefile  || die
+	rm -rf docs || die
+	insinto /usr/share/gnome-shell/extensions/"${extension_uuid}"
+	doins -r *
 }
 
 pkg_preinst() {

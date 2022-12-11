@@ -26,6 +26,9 @@ BDEPEND=""
 S="${WORKDIR}/no-overview-${PV}"
 extension_uuid="no-overview@fthx"
 
+# Not useful for us
+src_compile() { :; }
+
 src_install() {
 	einstalldocs
 	rm -f README.md LICENSE || die
