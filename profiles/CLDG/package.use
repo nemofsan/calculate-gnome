@@ -76,7 +76,7 @@ gnome-extra/evolution-data-server oauth
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
 
-# GNOME Software only for extensions - Пакет не установлен
+# GNOME Software only for extensions - The package is not installed
 # gnome-extra/gnome-software -firmware 
 
 # Garde binaires
@@ -85,7 +85,7 @@ www-client/chromium -gnome-keyring
 media-gfx/gimp -gnome
 media-video/vlc -gnome-keyring
 
-# Recommended by Jksf
+# Recommended by nemofsan
 
 # Transmission
 net-p2p/transmission -qt5 gtk
@@ -99,14 +99,14 @@ net-misc/remmina gnome-keyring
 net-libs/glib-networking gnome
 net-libs/gnome-online-accounts gnome
 
-# Пакет может не собираться с USE = gnome
+# The package may not compile using USE = gnome
 x11-wm/mutter gnome
 
 x11-misc/xdg-utils gnome
 x11-themes/adwaita-qt gnome
 x11-terms/gnome-terminal gnome-shell nautilus
 
-# Происходит циклическая зависимость пакетов с USE = gnome
+# There is a cyclic dependency of packages with USE = gnome
 media-libs/libcanberra -gnome sound
 
 media-plugins/grilo-plugins gnome-online-accounts
