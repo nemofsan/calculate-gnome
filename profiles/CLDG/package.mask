@@ -1,6 +1,3 @@
-# gnome-base/gnome-control-center
->=gnome-base/gnome-control-center-43.1
-
 # x11-terms/gnome-terminal
 >=x11-terms/gnome-terminal-3.46.3
 
