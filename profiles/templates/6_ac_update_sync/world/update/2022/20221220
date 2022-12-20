@@ -3,6 +3,7 @@
 #-ini(calculate-gnome.world,#-cut()-#)-#
 
 #?in(os_linux_pkglist, CLDG)!=#
+gnome-extra/gnome-browser-connector
 !gnome-extra/gnome-shell-extension-sound-output-device-chooser
 !gnome-extra/gnome-shell-extension-tweaks-system-menu
 #in#
