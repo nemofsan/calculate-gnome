@@ -4,13 +4,13 @@
 EAPI=8
 inherit gnome2-utils
 
-MY_PN="${PN/gnome-shell-extension-/}"
 
-COMMIT="19cc612c53d33e7c529c116a096bf78c66caae29"
+MY_PN="${PN/gnome-shell-extension-/}"
+MY_EXT="${PN/gnome-shell-extension-/}-extensions.gnome.org"
 
 DESCRIPTION="A dock for the Gnome Shell"
 HOMEPAGE="https://github.com/micheleg/dash-to-dock"
-SRC_URI="https://github.com/micheleg/dash-to-dock/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/micheleg/${MY_PN}/archive/extensions.gnome.org-v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -23,13 +23,13 @@ COMMON_DEPEND="
 "
 RDEPEND="${COMMON_DEPEND}
 	app-eselect/eselect-gnome-shell-extensions
-	>=gnome-base/gnome-shell-40
+	>=gnome-base/gnome-shell-40.0
 "
 DEPEND="${COMMON_DEPEND}"
 
 BDEPEND=""
 
-S="${WORKDIR}/${MY_PN}-${COMMIT}"
+S="${WORKDIR}/${MY_EXT}-v${PV}"
 extension_uuid="dash-to-dock@micxgx.gmail.com"
 
 src_prepare() {

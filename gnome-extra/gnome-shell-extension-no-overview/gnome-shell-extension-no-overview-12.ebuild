@@ -4,36 +4,38 @@
 EAPI=8
 inherit gnome2-utils
 
-MY_PN="${PN/gnome-shell-extension-/}-extension"
-MY_P="${MY_PN}-${PV}"
+MY_PN="${PN/gnome-shell-extension-/}"
 
-DESCRIPTION="Remove the application menu from the top bar"
-HOMEPAGE="https://github.com/stuarthayhurst/remove-app-menu-extension"
-SRC_URI="https://github.com/stuarthayhurst/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+COMMIT="665d0e1298b25654b21e027086896b4bd74560ac"
 
-LICENSE="GPL-3+"
+DESCRIPTION="No overview at start-up. For GNOME Shell 40+"
+HOMEPAGE="https://github.com/fthx/no-overview"
+SRC_URI="https://github.com/fthx/no-overview/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-COMMON_DEPEND="dev-libs/glib:2"
+COMMON_DEPEND="
+	dev-libs/glib:2
+"
 RDEPEND="${COMMON_DEPEND}
 	app-eselect/eselect-gnome-shell-extensions
-	>=gnome-base/gnome-shell-3.36
+	>=gnome-base/gnome-shell-40.0
 "
 DEPEND="${COMMON_DEPEND}"
 BDEPEND=""
 
-S="${WORKDIR}/${MY_P}"
-extension_uuid="RemoveAppMenu@Dragon8oy.com"
+S="${WORKDIR}/${MY_PN}-${COMMIT}"
+extension_uuid="no-overview@fthx"
 
 # Not useful for us
 src_compile() { :; }
 
 src_install() {
 	einstalldocs
-	rm -f README.md clean-svgs.py Makefile  || die
-	rm -rf docs || die
+	rm -f README.md LICENSE || die
 	insinto /usr/share/gnome-shell/extensions/"${extension_uuid}"
 	doins -r *
 }
@@ -52,5 +54,3 @@ pkg_postinst() {
 pkg_postrm() {
 	gnome2_schemas_update
 }
-
-
