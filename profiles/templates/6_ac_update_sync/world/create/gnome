@@ -2,6 +2,7 @@
 
 #?in(os_linux_pkglist, CLDG)!=#
 gnome-base/gnome
+gnome-extra/gnome-browser-connector
 gnome-extra/gnome-shell-extension-appindicator
 gnome-extra/gnome-shell-extension-applications-overview-tooltip
 gnome-extra/gnome-shell-extension-blur-my-shell
@@ -11,8 +12,6 @@ gnome-extra/gnome-shell-extension-desktop-icons-ng
 gnome-extra/gnome-shell-extension-maximize-to-empty-workspace
 gnome-extra/gnome-shell-extension-no-overview 
 gnome-extra/gnome-shell-extension-remove-app-menu
-gnome-extra/gnome-shell-extension-sound-output-device-chooser
-gnome-extra/gnome-shell-extension-tweaks-system-menu
 gnome-extra/gnome-power-manager
 sys-power/power-profiles-daemon
 net-irc/polari
