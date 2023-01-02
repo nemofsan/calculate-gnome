@@ -1,0 +1,5 @@
+# Calculate format=kde path=/etc/xdg/autostart
+[Desktop Entry]
+#?os_install_net_conf==networkmanager#
+NotShowIn=KDE;GNOME;
+#os_install_net_conf#
