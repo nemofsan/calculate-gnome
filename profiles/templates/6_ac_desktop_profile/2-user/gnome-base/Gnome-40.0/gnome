@@ -101,7 +101,7 @@ wrap-last-split-mode='word'
 app-picker-layout=[{'Sound & Video': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System Tools': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]
 disable-user-extensions=false
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'tweaks-system-menu@extensions.gnome-shell.fifi.org', 'applications-overview-tooltip@RaphaelRochet', 'ControlBlurEffectOnLockScreen@pratap.fastmail.fm', 'dash-to-dock@micxgx.gmail.com', 'MaximizeToEmptyWorkspace-extension@kaisersite.de', 'no-overview@fthx', 'ding@rastersoft.com', 'RemoveAppMenu@Dragon8oy.com', 'sound-output-device-chooser@kgshank.net', 'blur-my-shell@aunetx']
-favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Polari.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Music.desktop', 'org.gnome.Totem.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'cl-console-gui-update.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Polari.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Music.desktop', 'org.gnome.Totem.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'cl-console-gui-update.desktop']
 
 [shell/extensions/blur-my-shell/applications]
 blur=false
