@@ -37,7 +37,6 @@ app-admin/testdisk
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
 app-misc/mc
-app-portage/portage-utils
 sys-apps/acl
 sys-apps/dmidecode
 sys-apps/lm-sensors
