@@ -13,7 +13,6 @@ x11-themes/calculate-icon-theme
 #in#
 
 #?in(os_linux_pkglist, CLDG)!=#
-media-gfx/lightdm-themes-calculate
 x11-themes/adwaita-qt
 #in#
 
