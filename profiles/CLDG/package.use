@@ -71,21 +71,29 @@ media-video/vlc -gnome-keyring
 # Transmission
 net-p2p/transmission -qt5 gtk
 
-# The package may not compile using USE = gnome
+# The package may not compile using USE="gnome"
 # x11-wm/mutter -gnome
 
 # Gnome-terminal
 x11-terms/gnome-terminal gnome-shell
 
-# There is a cyclic dependency of packages with USE = gnome
+# There is a cyclic dependency of packages with USE="gnome"
 media-libs/libcanberra -gnome sound
 
-# colord-sane[...]: segfault, error 4 in libc.so.6 with USE = scanner;
-# media-gfx/simple-scan with USE = colord requires vala support in x11-misc/colord
+# colord-sane[...]: segfault, error 4 in libc.so.6 when x11-misc/colord[scanner];
+# media-gfx/simple-scan with USE="colord" requires [vala] support in x11-misc/colord
 x11-misc/colord vala -scanner
 
-# For x11-libs/gtk+ USE = colord, there is a conflict USE =abi_x86_32 (necessary to resolve the dependency conflict)
->=x11-libs/gtk+-3.24.35 -colord
+# For x11-libs/gtk+ USE="colord" and USE="sysprof",
+# there is a conflict USE = abi_x86_32 (necessary to resolve the dependency conflict)
+>=x11-libs/gtk+-3.24.35 -colord -sysprof
+
+# For packages with USE="sysprof", there is a dependency conflict 
+# (sysprof requires removing abi_x86_32)
+dev-libs/glib -sysprof
+net-libs/libsoup -sysprof
+x11-libs/pango -sysprof
+
 
 # For game
 sys-kernel/calculate-sources fsync
