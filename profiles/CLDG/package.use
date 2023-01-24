@@ -72,7 +72,7 @@ media-video/vlc -gnome-keyring
 net-p2p/transmission -qt5 gtk
 
 # The package may not compile using USE = gnome
-x11-wm/mutter gnome
+# x11-wm/mutter -gnome
 
 # Gnome-terminal
 x11-terms/gnome-terminal gnome-shell
