@@ -80,6 +80,13 @@ x11-terms/gnome-terminal gnome-shell
 # There is a cyclic dependency of packages with USE = gnome
 media-libs/libcanberra -gnome sound
 
+# colord-sane[...]: segfault, error 4 in libc.so.6 with USE = scanner;
+# media-gfx/simple-scan with USE = colord requires vala support in x11-misc/colord
+x11-misc/colord vala -scanner
+
+# For x11-libs/gtk+ USE = colord, there is a conflict USE =abi_x86_32 (necessary to resolve the dependency conflict)
+>=x11-libs/gtk+-3.24.35 -colord
+
 # For game
 sys-kernel/calculate-sources fsync
 
