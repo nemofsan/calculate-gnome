@@ -94,7 +94,6 @@ dev-libs/glib -sysprof
 net-libs/libsoup -sysprof
 x11-libs/pango -sysprof
 
-
 # For game
 sys-kernel/calculate-sources fsync
 
