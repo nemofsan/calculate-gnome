@@ -1,7 +1,7 @@
 # Calculate format=dconf dconf=/org/gnome
 
 [desktop/app-folders]
-folder-children=['Accessories', 'Graphics', 'Internet', 'Office', 'Settings', 'Sound & Video', 'System Tools', 'Utilities', 'YaST']
+folder-children=['Accessories', 'Graphics', 'Internet', 'Multimedia', 'Office', 'Settings', 'System', 'Utilities']
 
 [desktop/app-folders/folders/Accessories]
 categories=['Utility']
@@ -18,6 +18,11 @@ categories=['Network']
 name='Network.directory'
 translate=true
 
+[desktop/app-folders/folders/Multimedia]
+categories=['AudioVideo']
+name='AudioVideo.directory'
+translate=true
+
 [desktop/app-folders/folders/Office]
 categories=['Office']
 name='Office.directory'
@@ -25,15 +30,10 @@ translate=true
 
 [desktop/app-folders/folders/Settings]
 categories=['Settings']
-name='SystemSettings.directory'
+name='Settings.directory'
 translate=true
 
-[desktop/app-folders/folders/Sound & Video]
-categories=['AudioVideo']
-name='AudioVideo.directory'
-translate=true
-
-[desktop/app-folders/folders/System Tools]
+[desktop/app-folders/folders/System]
 categories=['System']
 name='System-Tools.directory'
 translate=true
@@ -41,11 +41,6 @@ translate=true
 [desktop/app-folders/folders/Utilities]
 categories=['X-GNOME-Utilities']
 name='X-GNOME-Utilities.directory'
-translate=true
-
-[desktop/app-folders/folders/YaST]
-categories=['X-SuSE-YaST']
-name='suse-yast.directory'
 translate=true
 
 [desktop/background]
@@ -83,7 +78,7 @@ idle-delay=uint32 900
 button-layout='appmenu:minimize,maximize,close'
 
 [shell]
-app-picker-layout=[{'Sound & Video': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System Tools': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]
+app-picker-layout=[{'Multimedia': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]
 disable-user-extensions=false
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'tweaks-system-menu@extensions.gnome-shell.fifi.org', 'applications-overview-tooltip@RaphaelRochet', 'ControlBlurEffectOnLockScreen@pratap.fastmail.fm', 'dash-to-dock@micxgx.gmail.com', 'MaximizeToEmptyWorkspace-extension@kaisersite.de', 'no-overview@fthx', 'ding@rastersoft.com', 'RemoveAppMenu@Dragon8oy.com', 'sound-output-device-chooser@kgshank.net', 'blur-my-shell@aunetx']
 favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Polari.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Music.desktop', 'org.gnome.Totem.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'cl-console-gui-update.desktop']

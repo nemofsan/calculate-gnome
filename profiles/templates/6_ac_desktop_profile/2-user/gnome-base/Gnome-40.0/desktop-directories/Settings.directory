@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name[en_CA]=Settings
+Name[en_GB]=Settings
+Name[ru]=Настройки
+Name=Settings
+Comment[en_CA]=Operating system settings
+Comment[en_GB]=Operating system settings
+Comment[ru]=Настройки операционной системы
+Comment=Operating system settings
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=gnome-settings
+Type=Directory
