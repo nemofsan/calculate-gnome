@@ -1,0 +1,15 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+ 
+  <!-- Settings-->
+  <Menu>
+    <Name>Settings</Name>
+    <Directory>Settings.directory</Directory>
+    <Include>
+      <And>
+        <Category>Settings</Category>
+        <Not><<Category>System</Category>/Not>
+        <Not><Category>X-GNOME-Utilities</Category></Not>
+      </And>
+    </Include>
+  </Menu> <!-- End Settings -->
