@@ -1,5 +1,0 @@
-# Calculate format=world name=world ini(calculate-gnome.world)<#-cut()-#
-
-#-ini(calculate-gnome,#-cut()-#)-#
-
-!net-misc/vinagre

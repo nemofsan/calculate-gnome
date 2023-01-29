@@ -2,4 +2,6 @@
 
 #-ini(calculate-gnome.world,#-cut()-#)-#
 
-!media-gfx/utsushi
+#?in(os_linux_pkglist, CLDG)!=#
+sys-apps/texinfo
+#in#

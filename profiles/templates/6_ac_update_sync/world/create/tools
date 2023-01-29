@@ -6,6 +6,7 @@ app-arch/pigz
 app-misc/tmux
 app-text/tree
 net-misc/dhcp
+sys-apps/texinfo
 sys-auth/pam_update
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
