@@ -13,6 +13,5 @@ gnome-extra/gnome-shell-extension-maximize-to-empty-workspace
 gnome-extra/gnome-shell-extension-no-overview 
 gnome-extra/gnome-shell-extension-remove-app-menu
 gnome-extra/gnome-power-manager
-sys-power/power-profiles-daemon
 net-irc/polari
 #in#
