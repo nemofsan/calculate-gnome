@@ -1,0 +1,5 @@
+# Calculate format=samba path=/var/lib/calculate name=ini.env ac_install_unmerge==on&&pkg(app-editors/gnome-text-editor)==&&ini(desktop.textedit)==gnome-text-editor
+
+[desktop]
+!textedit=
+textedit-removing=on

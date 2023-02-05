@@ -1,0 +1,6 @@
+# Calculate format=kde link=/usr/share/applications/org.gnome.TextEditor.desktop name=calculate-textedit.desktop mirror pkg(app-editors/gnome-text-editor)>=43.1
+
+# Hide icon
+[Desktop Entry]
+NoDisplay=true
+!MimeType=
