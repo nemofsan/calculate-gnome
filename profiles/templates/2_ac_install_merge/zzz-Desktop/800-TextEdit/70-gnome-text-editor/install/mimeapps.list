@@ -6,6 +6,52 @@
 
 [Added Associations]
 text/plain=org.gnome.TextEditor.desktop;
+text/css=org.gnome.TextEditor.desktop;
+text/javascript=org.gnome.TextEditor.desktop;
+text/markdown=org.gnome.TextEditor.desktop;
+text/mathml=org.gnome.TextEditor.desktop;
+text/x-csrc=org.gnome.TextEditor.desktop;
+text/x-chdr=org.gnome.TextEditor.desktop;
+text/x-dtd=org.gnome.TextEditor.desktop;
+text/x-java=org.gnome.TextEditor.desktop;
+text/x-javascript=org.gnome.TextEditor.desktop;
+text/x-patch=org.gnome.TextEditor.desktop;
+text/x-perl=org.gnome.TextEditor.destkop
+text/x-php=org.gnome.TextEditor.destkop
+text/x-python=org.gnome.TextEditor.destkop
+text/x-sql=org.gnome.TextEditor.desktop;
+text/xml=org.gnome.TextEditor.desktop;
+application/javascript=org.gnome.TextEditor.destkop
+application/x-cgi=org.gnome.TextEditor.desktop;
+application/x-javascript=org.gnome.TextEditor.desktop;
+application/x-perl=org.gnome.TextEditor.desktop;
+application/x-php=org.gnome.TextEditor.desktop;
+application/x-python=org.gnome.TextEditor.desktop;
+application/xml=org.gnome.TextEditor.desktop;
+application/xml-dtd=org.gnome.TextEditor.desktop;
 
 [Default Applications]
 text/plain=org.gnome.TextEditor.desktop;
+text/css=org.gnome.TextEditor.desktop;
+text/javascript=org.gnome.TextEditor.desktop;
+text/markdown=org.gnome.TextEditor.desktop;
+text/mathml=org.gnome.TextEditor.desktop;
+text/x-csrc=org.gnome.TextEditor.desktop;
+text/x-chdr=org.gnome.TextEditor.desktop;
+text/x-dtd=org.gnome.TextEditor.desktop;
+text/x-java=org.gnome.TextEditor.desktop;
+text/x-javascript=org.gnome.TextEditor.desktop;
+text/x-patch=org.gnome.TextEditor.desktop;
+text/x-perl=org.gnome.TextEditor.destkop
+text/x-php=org.gnome.TextEditor.destkop
+text/x-python=org.gnome.TextEditor.destkop
+text/x-sql=org.gnome.TextEditor.desktop;
+text/xml=org.gnome.TextEditor.desktop;
+application/javascript=org.gnome.TextEditor.destkop
+application/x-cgi=org.gnome.TextEditor.desktop;
+application/x-javascript=org.gnome.TextEditor.desktop;
+application/x-perl=org.gnome.TextEditor.desktop;
+application/x-php=org.gnome.TextEditor.desktop;
+application/x-python=org.gnome.TextEditor.desktop;
+application/xml=org.gnome.TextEditor.desktop;
+application/xml-dtd=org.gnome.TextEditor.desktop;
