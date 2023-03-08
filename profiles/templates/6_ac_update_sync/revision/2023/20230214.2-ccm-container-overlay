@@ -1,0 +1,25 @@
+# Calculate exec=/bin/bash ini(calculate-gnome.revision)<#-cut(0)-#
+
+#-ini(calculate-gnome.revision,#-cut(0)-#)-#
+
+if grep -q '\[container\]' /etc/portage/repos.conf/zz-calculate.conf && \
+	[[ ! -e /etc/portage/repos.conf/cl-lxc.conf ]]
+then
+	while IFS= read -r line; do
+		if [[ $line == '[container]' ]]; then
+			new=1
+		elif [[ ${line::1} == '[' ]]; then
+			new=
+		fi
+	
+		if [[ $new == 1 ]]; then
+			echo $line >> /etc/portage/repos.conf/cl-lxc.conf
+		else
+			echo $line >> /etc/portage/repos.conf/zz-calculate-new.conf
+		fi
+	
+	done <<< $(cat /etc/portage/repos.conf/zz-calculate.conf)
+	mv /etc/portage/repos.conf/zz-calculate-new.conf /etc/portage/repos.conf/zz-calculate.conf
+fi
+
+exit 0

@@ -1,0 +1,9 @@
+# Calculate exec=/bin/bash ini(calculate-gnome.revision)<#-cut(0)-#
+
+#-ini(calculate-gnome.revision,#-cut(0)-#)-#
+
+if [[ -e /etc/portage/repos.conf/cl-lxc.conf ]]; then
+	sed -i 's/^sync-type.*/sync-type = git/g' /etc/portage/repos.conf/cl-lxc.conf
+fi
+
+exit 0
