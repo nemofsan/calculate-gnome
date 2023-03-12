@@ -90,6 +90,7 @@
 <gui-libs/libhandy-1.8.1 amd64
 <gui-libs/libpanel-1.1.1 amd64
 #gui-libs/tepl amd64
+<gui-libs/vte-common-0.71.92 amd64
 <mail-client/evolution-3.46.4 amd64
 #media-fonts/cantarell amd64
 <media-gfx/eog-44 amd64
