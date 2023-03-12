@@ -41,6 +41,7 @@
 <dev-libs/vala-common-0.56.4 amd64
 #dev-python/pyatspi amd64
 <dev-python/pygobject-3.43.1 amd64
+<dev-util/gdbus-codegen-2.75.3 amd64
 <dev-util/glib-utils-2.75.3 amd64
 <dev-util/gnome-builder-44 amd64
 #dev-util/gtk-doc amd64
