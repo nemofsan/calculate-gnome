@@ -1,8 +1,0 @@
-# required by net-wireless/rtl88x2bu (argument)
-=net-wireless/rtl88x2bu-20221213 ~amd64
-
-# required by sys-power/power-profiles-daemon (argument)
-# =sys-power/power-profiles-daemon-0.12 ~amd64
-
-# gnome-extra/gnome-tweaks-42.0_beta (argument)
-=gnome-extra/gnome-tweaks-42.0_beta ~amd64

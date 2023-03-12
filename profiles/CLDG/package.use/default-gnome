@@ -1,5 +1,3 @@
-# Calculate Linux Desktop Gnome
-
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
@@ -23,7 +21,7 @@ app-emulation/fuse -pulseaudio
 dev-libs/efl sound
 
 # Needed by gnome-photos
-# media-libs/gegl raw
+media-libs/gegl raw
 
 # Needed by a global USE=wayland right now; some REQUIRED_USE may be outdated and need review
 >=media-libs/cogl-1.18.2-r1 gles2
@@ -41,7 +39,7 @@ app-crypt/gcr vala
 >=gnome-extra/evolution-data-server-3.8 vala
 
 # Required for cheese in gnome3
-# >=media-libs/gst-plugins-base-1.0 theora
+>=media-libs/gst-plugins-base-1.0 theora
 
 # Required for gnome-base/gnome-2.32 to be merged directly, for
 # gnome-extra/hamster-applet-2.32 and x11-misc/alacarte-0.13
@@ -58,42 +56,3 @@ media-libs/libmediaart gtk -qt5
 
 # For gnome-boxes
 net-misc/spice-gtk gtk3
-
-# GNOME without games by default
-gnome-base/gnome-extra-apps -games
-
-# Garde binaires
-net-libs/webkit-gtk -gnome-keyring
-www-client/chromium -gnome-keyring
-media-gfx/gimp -gnome
-media-video/vlc -gnome-keyring
-
-# Transmission
-net-p2p/transmission -qt5 gtk
-
-# The package may not compile using USE="gnome"
-# x11-wm/mutter -gnome
-
-# Gnome-terminal
-x11-terms/gnome-terminal gnome-shell
-
-# There is a cyclic dependency of packages with USE="gnome"
-media-libs/libcanberra -gnome sound
-
-# colord-sane[...]: segfault, error 4 in libc.so.6 when x11-misc/colord[scanner];
-# media-gfx/simple-scan with USE="colord" requires [vala] support in x11-misc/colord
-x11-misc/colord vala -scanner
-
-# For x11-libs/gtk+ USE="colord" and USE="sysprof",
-# there is a conflict USE = abi_x86_32 (necessary to resolve the dependency conflict)
->=x11-libs/gtk+-3.24.35 -colord -sysprof
-
-# For packages with USE="sysprof", there is a dependency conflict 
-# (sysprof requires removing abi_x86_32)
-dev-libs/glib -sysprof
-net-libs/libsoup -sysprof
-x11-libs/pango -sysprof
-
-# For game
-sys-kernel/calculate-sources fsync
-

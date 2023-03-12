@@ -1,0 +1,2 @@
+# Improves performance in games that use Proton by Valve
+sys-kernel/calculate-sources fsync
