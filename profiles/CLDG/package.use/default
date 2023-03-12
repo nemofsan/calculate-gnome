@@ -3,3 +3,6 @@ app-office/libreoffice -eds
 
 # virtualization
 app-emulation/virt-manager gui
+
+# gnome-terminal
+x11-terms/gnome-terminal gnome-shell
