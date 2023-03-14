@@ -6,3 +6,6 @@ app-emulation/virt-manager gui
 
 # gnome-terminal
 x11-terms/gnome-terminal gnome-shell
+
+# GNOME without games by default
+gnome-base/gnome-extra-apps -games
