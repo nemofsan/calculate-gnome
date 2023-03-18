@@ -1,9 +1,0 @@
-# For x11-libs/gtk+ USE="colord" and USE="sysprof",
-# there is a conflict USE = abi_x86_32 (necessary to resolve the dependency conflict)
->=x11-libs/gtk+-3.24.35 -colord -sysprof
-
-# For packages with USE="sysprof", there is a dependency conflict 
-# (sysprof requires removing abi_x86_32)
-dev-libs/glib -sysprof
-net-libs/libsoup -sysprof
-x11-libs/pango -sysprof
