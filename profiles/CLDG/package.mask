@@ -1,0 +1,4 @@
+#default
+gnome-base/gnome-control-center::gentoo
+gnome-base/gnome-core-apps::gentoo
+
