@@ -13,5 +13,9 @@ net-p2p/transmission -qt5 gtk
 # Improves performance in games that use Proton by Valve
 sys-kernel/calculate-sources fsync
 
+# power-profiles-daemon
+sys-power/power-profiles-daemon orcrun
+
 # gnome-terminal
 x11-terms/gnome-terminal gnome-shell
+
