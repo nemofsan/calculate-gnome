@@ -2,6 +2,18 @@
 
 USE=""
 
+# default-desktop
+
+USE="${USE} dts"
+USE="${USE} lcms"
+USE="${USE} mp4"
+USE="${USE} pango"
+USE="${USE} sound"
+USE="${USE} unicode"
+USE="${USE} xml"
+
+# default-gnome
+
 USE="${USE} colord"
 USE="${USE} eds"
 USE="${USE} evo"
