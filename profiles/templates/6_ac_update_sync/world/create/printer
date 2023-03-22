@@ -1,7 +1,6 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDG)!=#
-media-gfx/epsonscan2
 net-print/cndrvcups-common-lb
 net-print/cnijfilter2
 net-print/cups
