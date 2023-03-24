@@ -1,0 +1,57 @@
+# Calculate format=compiz protected
+
+# Update info
+#-ini(desktop.updating, on)-#
+#-ini(desktop.textedit, gedit)-#
+
+[Added Associations]
+text/plain=org.gnome.gedit.desktop;
+text/css=org.gnome.gedit.desktop;
+text/javascript=org.gnome.gedit.desktop;
+text/markdown=org.gnome.gedit.desktop;
+text/mathml=org.gnome.gedit.desktop;
+text/x-csrc=org.gnome.gedit.desktop;
+text/x-chdr=org.gnome.gedit.desktop;
+text/x-dtd=org.gnome.gedit.desktop;
+text/x-java=org.gnome.gedit.desktop;
+text/x-javascript=org.gnome.gedit.desktop;
+text/x-patch=org.gnome.gedit.desktop;
+text/x-perl=org.gnome.gedit.destkop
+text/x-php=org.gnome.gedit.destkop
+text/x-python=org.gnome.gedit.destkop
+text/x-sql=org.gnome.gedit.desktop;
+text/xml=org.gnome.gedit.desktop;
+application/javascript=org.gnome.gedit.destkop
+application/x-cgi=org.gnome.gedit.desktop;
+application/x-javascript=org.gnome.gedit.desktop;
+application/x-perl=org.gnome.gedit.desktop;
+application/x-php=org.gnome.gedit.desktop;
+application/x-python=org.gnome.gedit.desktop;
+application/xml=org.gnome.gedit.desktop;
+application/xml-dtd=org.gnome.gedit.desktop;
+
+[Default Applications]
+text/plain=org.gnome.gedit.desktop;
+text/css=org.gnome.gedit.desktop;
+text/javascript=org.gnome.gedit.desktop;
+text/markdown=org.gnome.gedit.desktop;
+text/mathml=org.gnome.gedit.desktop;
+text/x-csrc=org.gnome.gedit.desktop;
+text/x-chdr=org.gnome.gedit.desktop;
+text/x-dtd=org.gnome.gedit.desktop;
+text/x-java=org.gnome.gedit.desktop;
+text/x-javascript=org.gnome.gedit.desktop;
+text/x-patch=org.gnome.gedit.desktop;
+text/x-perl=org.gnome.gedit.destkop
+text/x-php=org.gnome.gedit.destkop
+text/x-python=org.gnome.gedit.destkop
+text/x-sql=org.gnome.gedit.desktop;
+text/xml=org.gnome.gedit.desktop;
+application/javascript=org.gnome.gedit.destkop
+application/x-cgi=org.gnome.gedit.desktop;
+application/x-javascript=org.gnome.gedit.desktop;
+application/x-perl=org.gnome.gedit.desktop;
+application/x-php=org.gnome.gedit.desktop;
+application/x-python=org.gnome.gedit.desktop;
+application/xml=org.gnome.gedit.desktop;
+application/xml-dtd=org.gnome.gedit.desktop;
