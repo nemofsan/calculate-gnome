@@ -32,8 +32,7 @@ src_compile() { :; }
 
 src_install() {
 	einstalldocs
-	rm -f README.md clean-svgs.py Makefile  || die
-	rm -rf docs || die
+	cd extension
 	insinto /usr/share/gnome-shell/extensions/"${extension_uuid}"
 	doins -r *
 }
