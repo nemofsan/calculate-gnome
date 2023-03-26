@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(calculate-gnome.world)<#-cut()-#
+
+#-ini(calculate-gnome.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLDG)!=#
+!gnome-extra/gnome-shell-extension-control-blur-effect-on-lock-screen
+#in#
