@@ -50,38 +50,89 @@ name='X-GNOME-Utilities.directory'
 translate=true
 
 [desktop/background]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/calculate/Calculate%20Linux%2011%20Blue.jpg'
-picture-uri-dark='file:///usr/share/backgrounds/calculate/Calculate%20Linux%2011%20Brown.jpg'
-primary-color='#000000'
-secondary-color='#000000'
+#?ini(profile.appearance-wallpaper)!=#
+picture-uri='file://#-ini(profile.appearance-wallpaper)-#'
+#!ini#
+picture-uri='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
+#ini#
+#?ini(profile.appearance-wallpaper-dark)!=#
+picture-uri='file://#-ini(profile.appearance-wallpaper-dark)-#'
+#!ini#
+picture-uri-dark='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
+#ini#
 
 [desktop/input-sources]
 sources=[('xkb', 'us'), ('xkb', 'ru')]
 xkb-options=['grp:alt_shift_toggle']
 
 [desktop/interface]
-color-scheme='prefer-dark'
-cursor-theme='Adwaita'
-enable-animations=true
-font-antialiasing='grayscale'
-font-hinting='slight'
-gtk-theme='Adwaita-dark'
+#ini(profile.appearance-cursor)!=#
+cursor-theme='#-ini(profile.appearance-cursor)-#'
+#ini#
+document-font-name='Droid Sans #-ini(profile.font-size)-#'
+font-name='Droid Sans #-ini(profile.font-size)-#'
+#?ini(profile.appearance-style)!=#
+gtk-theme='#-ini(profile.appearance-style)-#'
+#!ini#
+gtk-theme='Adwaita'
+#ini#
+#ini(profile.appearance-icons)!=#
+icon-theme='#-ini(profile.appearance-icons)-#'
+#!ini#
 icon-theme='Adwaita'
+#ini#
+monospace-font-name='Droid Sans Mono Slashed #-ini(profile.font-size)-#'
+#?cl_ver>=3.6.8.8&&install.cl_install_dpi!=#
+#-sum(dpi,,#-install.cl_install_dpi-#)-#
+text-scaling-factor=#-sum(dpii,dpi/96)-#.#-sum(dpid,dpi*1000/96-dpii*1000)-#
+#cl_ver#
+
+[desktop/peripherals/keyboard]
+delay=uint32 #-ini(profile.keyboard-delay)-#
+repeat-interval=uint32 #-ini(profile.keyboard-rate)-#
+
+[desktop/peripherals/mouse]
+double-click=#-ini(profile.mouse-doubleclick-delayed)-#
+#?ini(profile.mouse-lefthanded)==on#
+left-handed=true
+#ini#
 
 [desktop/screensaver]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/calculate/Calculate%20Linux%2015.jpg'
-primary-color='#000000'
-secondary-color='#000000'
+#ini(profile.appearance-screensaver)!=#
+picture-uri='#-ini(profile.appearance-screensaver)-#'
+#!ini#
+picture-uri='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
+#ini#
+#?os_root_type==livecd#
+lock-enabled=false
+#!os_root_type#
+lock-enabled=true
+#os_root_type#
 
 [desktop/session]
 idle-delay=uint32 900
 
 [desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
+titlebar-font='Droid Sans Bold #-ini(profile.font-size)-#'
+
+[nautilus/preferences]
+click-policy='#-ini(profile.mouse-clickpolicy)-#'
+
+[settings-daemon/plugins/power]
+power-button-action='suspend'
+#?ini(profile.power-ac-type)==on#
+sleep-inactive-ac-type='suspend'
+sleep-inactive-ac-timeout=#-sum(sleep,60*#-ini(profile.power-display-sleep)-#)-#
+#!ini#
+sleep-inactive-ac-type='nothing'
+#ini#
+#?ini(profile.power-battery-type)==on#
+sleep-inactive-battery-type='suspend'
+sleep-inactive-battery-timeout=#-sum(sleep,60*#-ini(profile.power-display-sleep)-#)-#
+#!ini#
+sleep-inactive-battery-type='nothing'
+#ini#
 
 [shell]
 app-picker-layout=[{'Multimedia': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]

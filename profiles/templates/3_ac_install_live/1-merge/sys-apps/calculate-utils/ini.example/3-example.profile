@@ -12,19 +12,6 @@
 
 #?in(os_linux_pkglist, CLDG)!=#
 #?os_install_locale_language!=ru&&os_install_locale_language!=fr#
-# Window border size
-#os_install_locale_language#
-#?os_install_locale_language==ru#
-# Размер границы окна
-#os_install_locale_language#
-#?os_install_locale_language==fr#
-# Épaisseur de la bordure des fenêtres
-#os_install_locale_language#
-; appearance-border =
-
-#in#
-#?in(os_linux_pkglist, CLDG)!=#
-#?os_install_locale_language!=ru&&os_install_locale_language!=fr#
 # Mouse cursor theme
 #os_install_locale_language#
 #?os_install_locale_language==ru#
@@ -47,6 +34,19 @@
 # Thème des icônes
 #os_install_locale_language#
 ; appearance-icons = Calculate
+
+#in#
+#?in(os_linux_pkglist, CLDG)!=#
+#?os_install_locale_language!=ru&&os_install_locale_language!=fr#
+# Screen saver
+#os_install_locale_language#
+#?os_install_locale_language==ru#
+# Заставка экрана
+#os_install_locale_language#
+#?os_install_locale_language==fr#
+# Économiseur d'écran
+#os_install_locale_language#
+; appearance-screensaver =
 
 #in#
 #?in(os_linux_pkglist, CLDG)!=#
@@ -76,6 +76,7 @@
 # appropriés de la section “thème” pour changer de fond d’écran
 #os_install_locale_language#
 ; appearance-wallpaper =
+; appearance-wallpaper-dark =
 
 #in#
 #?in(os_linux_pkglist, CLDG)!=#
@@ -158,6 +159,32 @@
 #in#
 #?in(os_linux_pkglist, CLDG)!=#
 #?os_install_locale_language!=ru&&os_install_locale_language!=fr#
+# Switching to standby mode when powered from the mains
+#os_install_locale_language#
+#?os_install_locale_language==ru#
+# Переключение в режим ожидания при питании от сети
+#os_install_locale_language#
+#?os_install_locale_language==fr#
+# Passage en mode veille lorsqu'il est alimenté par le secteur
+#os_install_locale_language#
+; power-ac-type = off
+
+#in#
+#?in(os_linux_pkglist, CLDG)!=#
+#?os_install_locale_language!=ru&&os_install_locale_language!=fr#
+# Switching to standby mode when powered by battery
+#os_install_locale_language#
+#?os_install_locale_language==ru#
+# Переключение в режим ожидания при питании от батареи
+#os_install_locale_language#
+#?os_install_locale_language==fr#
+# Passage en mode veille lorsqu'il est alimenté par batterie
+#os_install_locale_language#
+; power-battery-type = off
+
+#in#
+#?in(os_linux_pkglist, CLDG)!=#
+#?os_install_locale_language!=ru&&os_install_locale_language!=fr#
 # Time in seconds before the display is turned off when idle, '0' - never
 #os_install_locale_language#
 #?os_install_locale_language==ru#
@@ -167,6 +194,6 @@
 #?os_install_locale_language==fr#
 # Mettre en veille après (secondes), '0', ne jamais arrêter
 #os_install_locale_language#
-; power-display-sleep = 16
+; power-display-sleep = 15
 
 #in#
