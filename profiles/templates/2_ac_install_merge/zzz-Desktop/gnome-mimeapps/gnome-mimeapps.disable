@@ -1,6 +1,0 @@
-# Calculate pkg(gnome-base/gnome-session)!= exists(/usr/share/applications/gnome-mimeapps.list)==f&&exists(/usr/share/applications/gnome-mimeapps.list.disable)!=f exec=/bin/bash
-
-cd /usr/share/applications/
-/bin/mv gnome-mimeapps.list gnome-mimeapps.list.disable 2>/dev/null\
-
-true
