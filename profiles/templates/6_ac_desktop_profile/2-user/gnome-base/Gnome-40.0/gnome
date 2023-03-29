@@ -1,55 +1,55 @@
-# Calculate format=dconf dconf=/org/gnome
+# Calculate format=dconf dconf=/org
 
-[TextEditor]
+[gnome/TextEditor]
 restore-session=false
 show-line-numbers=true
 spellcheck=false
 use-system-font=true
 
-[desktop/app-folders]
+[gnome/desktop/app-folders]
 folder-children=['Accessories', 'Graphics', 'Internet', 'Multimedia', 'Office', 'Settings', 'System', 'Utilities']
 
-[desktop/app-folders/folders/Accessories]
+[gnome/desktop/app-folders/folders/Accessories]
 categories=['Utility']
 name='Utility.directory'
 translate=true
 
-[desktop/app-folders/folders/Graphics]
+[gnome/desktop/app-folders/folders/Graphics]
 categories=['Graphics']
 name='Graphics.directory'
 translate=true
 
-[desktop/app-folders/folders/Internet]
+[gnome/desktop/app-folders/folders/Internet]
 categories=['Network']
 name='Network.directory'
 translate=true
 
-[desktop/app-folders/folders/Multimedia]
+[gnome/desktop/app-folders/folders/Multimedia]
 categories=['AudioVideo']
 name='AudioVideo.directory'
 translate=true
 
-[desktop/app-folders/folders/Office]
+[gnome/desktop/app-folders/folders/Office]
 categories=['Office']
 name='Office.directory'
 translate=true
 
-[desktop/app-folders/folders/Settings]
+[gnome/desktop/app-folders/folders/Settings]
 categories=['Settings']
 name='Settings.directory'
 translate=true
 
-[desktop/app-folders/folders/System]
+[gnome/desktop/app-folders/folders/System]
 categories=['System']
 name='System-Tools.directory'
 translate=true
 
-[desktop/app-folders/folders/Utilities]
+[gnome/desktop/app-folders/folders/Utilities]
 categories=['X-GNOME-Utilities']
 name='X-GNOME-Utilities.directory'
 translate=true
 
-[desktop/background]
+[gnome/desktop/background]
 #?ini(profile.appearance-wallpaper)!=#
 picture-uri='file://#-ini(profile.appearance-wallpaper)-#'
 #!ini#
@@ -61,12 +61,12 @@ picture-uri='file://#-ini(profile.appearance-wallpaper-dark)-#'
 picture-uri-dark='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
 #ini#
 
-[desktop/input-sources]
+[gnome/desktop/input-sources]
 sources=[('xkb', 'us'), ('xkb', 'ru')]
 xkb-options=['grp:alt_shift_toggle']
 
-[desktop/interface]
-#ini(profile.appearance-cursor)!=#
+[gnome/desktop/interface]
+#?ini(profile.appearance-cursor)!=#
 cursor-theme='#-ini(profile.appearance-cursor)-#'
 #ini#
 document-font-name='Droid Sans #-ini(profile.font-size)-#'
@@ -76,7 +76,7 @@ gtk-theme='#-ini(profile.appearance-style)-#'
 #!ini#
 gtk-theme='Adwaita'
 #ini#
-#ini(profile.appearance-icons)!=#
+#?ini(profile.appearance-icons)!=#
 icon-theme='#-ini(profile.appearance-icons)-#'
 #!ini#
 icon-theme='Adwaita'
@@ -87,39 +87,39 @@ monospace-font-name='Droid Sans Mono Slashed #-ini(profile.font-size)-#'
 text-scaling-factor=#-sum(dpii,dpi/96)-#.#-sum(dpid,dpi*1000/96-dpii*1000)-#
 #cl_ver#
 
-[desktop/peripherals/keyboard]
+[gnome/desktop/peripherals/keyboard]
 delay=uint32 #-ini(profile.keyboard-delay)-#
 repeat-interval=uint32 #-ini(profile.keyboard-rate)-#
 
-[desktop/peripherals/mouse]
+[gnome/desktop/peripherals/mouse]
 double-click=#-ini(profile.mouse-doubleclick-delayed)-#
 #?ini(profile.mouse-lefthanded)==on#
 left-handed=true
 #ini#
 
-[desktop/screensaver]
-#ini(profile.appearance-screensaver)!=#
-picture-uri='#-ini(profile.appearance-screensaver)-#'
-#!ini#
-picture-uri='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
-#ini#
+[gnome/desktop/screensaver]
 #?os_root_type==livecd#
 lock-enabled=false
 #!os_root_type#
 lock-enabled=true
 #os_root_type#
+#?ini(profile.appearance-screensaver)!=#
+picture-uri='#-ini(profile.appearance-screensaver)-#'
+#!ini#
+picture-uri='file:///usr/share/backgrounds/calculate/Calculate Linux.jpg'
+#ini#
 
-[desktop/session]
+[gnome/desktop/session]
 idle-delay=uint32 900
 
-[desktop/wm/preferences]
+[gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 titlebar-font='Droid Sans Bold #-ini(profile.font-size)-#'
 
-[nautilus/preferences]
+[gnome/nautilus/preferences]
 click-policy='#-ini(profile.mouse-clickpolicy)-#'
 
-[settings-daemon/plugins/power]
+[gnome/settings-daemon/plugins/power]
 power-button-action='suspend'
 #?ini(profile.power-ac-type)==on#
 sleep-inactive-ac-type='suspend'
@@ -134,25 +134,25 @@ sleep-inactive-battery-timeout=#-sum(sleep,60*#-ini(profile.power-display-sleep)
 sleep-inactive-battery-type='nothing'
 #ini#
 
-[shell]
+[gnome/shell]
 app-picker-layout=[{'Multimedia': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]
 disable-user-extensions=false
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'applications-overview-tooltip@RaphaelRochet', 'dash-to-dock@micxgx.gmail.com', 'no-overview@fthx', 'ding@rastersoft.com', 'RemoveAppMenu@Dragon8oy.com', 'blur-my-shell@aunetx']
 favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Polari.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Music.desktop', 'org.gnome.Totem.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'cl-console-gui-update.desktop']
 
-[shell/extensions/blur-my-shell/applications]
+[gnome/shell/extensions/blur-my-shell/applications]
 blur=false
 
-[shell/extensions/blur-my-shell/dash-to-dock]
+[gnome/shell/extensions/blur-my-shell/dash-to-dock]
 blur=false
 
-[shell/extensions/blur-my-shell/overview]
+[gnome/shell/extensions/blur-my-shell/overview]
 blur=true
 brightness=0.80000000000000004
 customize=true
 style-components=1
 
-[shell/extensions/blur-my-shell/panel]
+[gnome/shell/extensions/blur-my-shell/panel]
 blur=true
 brightness=0.68000000000000005
 customize=true
@@ -162,7 +162,7 @@ style-panel=0
 unblur-dynamically=true
 unblur-in-overview=false
 
-[shell/extensions/dash-to-dock]
+[gnome/shell/extensions/dash-to-dock]
 apply-custom-theme=false
 background-opacity=0.80000000000000004
 custom-background-color=false
@@ -174,13 +174,13 @@ preferred-monitor=-2
 show-apps-at-top=false
 transparency-mode='DYNAMIC'
 
-[shell/extensions/ding]
+[gnome/shell/extensions/ding]
 show-home=false
 show-trash=false
 show-volumes=false
 
-[terminal/legacy]
-theme-variant='dark'
+[gnome/terminal/legacy]
+theme-variant='system'
 
-[tweaks]
+[gnome/tweaks]
 show-extensions-notice=false
