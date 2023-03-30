@@ -1,7 +1,52 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDG)!=#
-gnome-base/gnome
+# core-libs
+gnome-base/gnome-core-libs
+
+# core-apps
+gnome-base/gnome-session
+gnome-base/gnome-settings-daemon
+gnome-base/gnome-control-center
+gnome-extra/gnome-color-manager
+
+app-crypt/gcr
+gnome-base/nautilus
+gnome-base/gnome-keyring
+gnome-extra/evolution-data-server
+
+app-crypt/seahorse
+app-editors/gnome-text-editor
+app-text/evince
+gnome-extra/gnome-contacts
+media-gfx/eog
+media-video/totem
+x11-terms/gnome-terminal
+
+gnome-extra/gnome-user-docs
+gnome-extra/yelp
+
+x11-themes/adwaita-icon-theme
+
+net-wireless/gnome-bluetooth
+
+# core
+gnome-base/gdm
+
+x11-wm/mutter
+gnome-base/gnome-shel
+media-fonts/cantarell
+
+x11-themes/gnome-backgrounds
+x11-themes/sound-theme-freedesktop
+
+gnome-extra/gnome-shell-extensions
+
+# extra-apps
+gnome-base/gnome-extra-apps
+net-irc/polari
+
+# extensions
 gnome-extra/gnome-browser-connector
 gnome-extra/gnome-shell-extension-appindicator
 gnome-extra/gnome-shell-extension-applications-overview-tooltip
@@ -10,6 +55,4 @@ gnome-extra/gnome-shell-extension-dash-to-dock
 gnome-extra/gnome-shell-extension-desktop-icons-ng
 gnome-extra/gnome-shell-extension-no-overview 
 gnome-extra/gnome-shell-extension-remove-app-menu
-gnome-extra/gnome-power-manager
-net-irc/polari
 #in#
