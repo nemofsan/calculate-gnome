@@ -1,4 +1,4 @@
-# Calculate comment=# name=ini.env.example append=after
+# Calculate comment=# append=after name=ini.env.example
 #?os_install_locale_language!=ru&&os_install_locale_language!=fr#
 #============================= System settings ===============================
 #os_install_locale_language#

@@ -1,4 +1,4 @@
-# Calculate name=world format=world
+# Calculate format=world name=world
 
 #?in(os_linux_pkglist, CLDG)!=#
 media-plugins/alsa-plugins

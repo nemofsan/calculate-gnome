@@ -1,4 +1,4 @@
-# Calculate comment=# name=ini.env.example append=after in(os_linux_pkglist,CLDG)!=
+# Calculate comment=# append=after name=ini.env.example in(os_linux_pkglist,CLDG)!=
 #?os_install_locale_language!=ru&&os_install_locale_language!=fr#
 #=========================== User profile settings ===========================
 #os_install_locale_language#

@@ -1,1 +1,1 @@
-# Calculate name= path="#-ini(resource.desktop)-#"
+# Calculate path="#-ini(resource.desktop)-#" name=

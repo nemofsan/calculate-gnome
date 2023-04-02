@@ -1,4 +1,4 @@
-# Calculate comment=# name=ini.env.example append=after ini(container.type)==desktop
+# Calculate comment=# append=after name=ini.env.example ini(container.type)==desktop
 #?os_install_locale_language!=ru#
 #============================= Xorg settings ===============================
 #os_install_locale_language#

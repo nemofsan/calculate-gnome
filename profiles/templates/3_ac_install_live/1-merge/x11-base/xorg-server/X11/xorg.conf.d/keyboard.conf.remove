@@ -1,1 +1,1 @@
-# Calculate  path=/etc/X11/xorg.conf.d name=keyboard.conf append=remove exists(/etc/X11/xorg.conf.d/keyboard.conf)==f pkg(gnome-base/gnome-session)!=&&pkg(gnome-base/gdm)>=40.0
+# Calculate append=remove path=/etc/X11/xorg.conf.d name=keyboard.conf exists(/etc/X11/xorg.conf.d/keyboard.conf)==f pkg(gnome-base/gnome-session)!=&&pkg(gnome-base/gdm)>=40.0

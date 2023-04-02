@@ -1,1 +1,1 @@
-# Calculate exists(/usr/share/gnome-background-properties/calculate.xml)==f path=/usr/share/gnome-background-properties name=calculate.xml append=remove 
+# Calculate append=remove path=/usr/share/gnome-background-properties name=calculate.xml exists(/usr/share/gnome-background-properties/calculate.xml)==f

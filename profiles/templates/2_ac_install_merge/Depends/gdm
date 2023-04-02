@@ -1,1 +1,1 @@
-# Calculate append=skip merge(gnome-base/gdm)!= merge=gui-libs/display-manager-init
+# Calculate append=skip merge=gui-libs/display-manager-init merge(gnome-base/gdm)!=
