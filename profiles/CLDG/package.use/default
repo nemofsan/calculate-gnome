@@ -1,8 +1,14 @@
-# office
-app-office/libreoffice -eds
+# For eautoreconf in =app-crypt/seahorse-3.10.2-r1
+app-crypt/gcr vala
 
 # virtualization
 app-emulation/virt-manager gui
+
+# office
+app-office/libreoffice -eds
+
+# Don't force users to enable gd on PHP due to desktop defaults
+dev-lang/php -exif -truetype
 
 # Python Imaging Library (fork) 
 dev-python/pillow xcb
@@ -10,8 +16,18 @@ dev-python/pillow xcb
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
 
+# Pulled in by tracker and grilo-plugins
+media-libs/libmediaart gtk -qt5
+
+# Enable luajit for OSC and youtube-dl support by default.
+# Override default +sdl from desktop profile and disable sdl outputs.
+# These outputs are for systems without a proper audio/video support.
+media-video/mpv lua -sdl
+media-video/mpv -lua_single_target_lua5-1
+media-video/mpv lua_single_target_luajit
+
 # Transmission
-net-p2p/transmission -qt5 gtk
+net-p2p/transmission gtk -qt5
 
 # Improves performance in games that use Proton by Valve
 sys-kernel/calculate-sources fsync
@@ -21,4 +37,3 @@ sys-power/power-profiles-daemon orcrun
 
 # gnome-terminal
 x11-terms/gnome-terminal gnome-shell
-

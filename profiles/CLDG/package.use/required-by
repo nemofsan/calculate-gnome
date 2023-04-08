@@ -1,2 +1,23 @@
+# Required by many packages, most notably Mozilla products
+dev-lang/python sqlite
+
+# Required by media-gfx/digikam
+media-gfx/exiv2 xmp
+
+# Required by a global USE=wayland
+media-libs/cogl kms
+
+# Required by media-sound/gnome-music
+media-libs/grilo playlist
+
+# Required by cheese
+>=media-libs/gst-plugins-base-1.0 theora
+
+# Required by x11-wm/mutter[wayland], bug #547300
+>=media-libs/mesa-10.3 gles2
+
+# Required by gnome-extra/gnome-boxes
+net-misc/spice-gtk gtk3
+
 # required by media-gfx/simple-scan[colord]
 x11-misc/colord vala
