@@ -1,0 +1,3 @@
+# Use binary packages
+app-office/libreoffice -eds
+net-libs/webkit-gtk -gnome-keyring -lcms

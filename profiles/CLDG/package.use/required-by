@@ -13,6 +13,9 @@ media-libs/grilo playlist
 # Required by cheese
 >=media-libs/gst-plugins-base-1.0 theora
 
+# Required by gnome-base/gnome-control-center
+media-libs/libcanberra sound
+
 # Required by x11-wm/mutter[wayland], bug #547300
 >=media-libs/mesa-10.3 gles2
 

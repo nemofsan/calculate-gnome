@@ -4,9 +4,6 @@ app-crypt/gcr vala
 # virtualization
 app-emulation/virt-manager gui
 
-# office
-app-office/libreoffice -eds
-
 # Don't force users to enable gd on PHP due to desktop defaults
 dev-lang/php -exif -truetype
 
@@ -37,3 +34,4 @@ sys-power/power-profiles-daemon orcrun
 
 # gnome-terminal
 x11-terms/gnome-terminal gnome-shell
+
