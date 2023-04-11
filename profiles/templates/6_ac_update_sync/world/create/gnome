@@ -34,7 +34,7 @@ net-wireless/gnome-bluetooth
 gnome-base/gdm
 
 x11-wm/mutter
-gnome-base/gnome-shel
+gnome-base/gnome-shell
 media-fonts/cantarell
 
 x11-themes/gnome-backgrounds
