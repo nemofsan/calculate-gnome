@@ -1,9 +1,6 @@
 # Avoid a circular dependency, bug 764623
 dev-lang/python -bluetooth
 
-# REQUIRED_USE constraint when pulseaudio is enabled
-dev-libs/efl sound
-
 # For displaying properly emojis on the internet
 media-fonts/fonts-meta emoji
 

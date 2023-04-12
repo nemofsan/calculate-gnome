@@ -1,0 +1,31 @@
+# Calculate format=world name=world ini(calculate-gnome.world)<#-cut()-#
+
+#-ini(calculate-gnome.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLDG)!=#
+!gnome-base/gnome-extra-apps
+sys-apps/baobab
+media-video/cheese
+www-client/epiphany
+app-arch/file-roller
+gnome-extra/gnome-calculator
+gnome-extra/gnome-calendar
+gnome-extra/gnome-characters
+sys-apps/gnome-disk-utility
+media-gfx/gnome-font-viewer
+media-gfx/gnome-screenshot
+gnome-extra/gnome-system-monitor
+gnome-extra/gnome-weather
+gnome-extra/gucharmap
+gnome-extra/sushi
+media-sound/sound-juicer
+gnome-base/dconf-editor
+app-dicts/gnome-dictionary
+mail-client/evolution
+gnome-extra/gnome-tweaks
+gnome-extra/nautilus-sendto
+gnome-extra/gnome-user-share
+media-gfx/shotwell
+app-misc/tracker
+app-misc/tracker-miners
+#in#

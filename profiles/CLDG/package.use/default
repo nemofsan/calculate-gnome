@@ -1,20 +1,11 @@
 # For eautoreconf in =app-crypt/seahorse-3.10.2-r1
 app-crypt/gcr vala
 
-# virtualization
-app-emulation/virt-manager gui
-
 # Don't force users to enable gd on PHP due to desktop defaults
 dev-lang/php -exif -truetype
 
 # Python Imaging Library (fork) 
 dev-python/pillow xcb
-
-# GNOME without games by default
-gnome-base/gnome-extra-apps -games
-
-# Pulled in by tracker and grilo-plugins
-media-libs/libmediaart gtk -qt5
 
 # Enable luajit for OSC and youtube-dl support by default.
 # Override default +sdl from desktop profile and disable sdl outputs.
