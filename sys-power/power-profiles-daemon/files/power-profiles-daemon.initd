@@ -8,8 +8,6 @@ description="Access to power profile processing via D-bus"
 pidfile="/run/power-profiles-daemon.pid"
 command="/usr/libexec/power-profiles-daemon"
 command_args="${PPDARGS}"
-supervisor="supervise-daemon"
-command_args_foreground=""
 command_background=true
 
 depend() {
@@ -19,10 +17,4 @@ depend() {
 
 start_pre() {
 	checkpath -d /var/lib/power-profiles-daemon
-}
-
-reload() {
-        ebegin "Reloading ${RC_SVCNAME}"
-        ${supervisor} ${RC_SVCNAME} --signal HUP --pidfile "${pidfile}"
-        eend $?
 }
