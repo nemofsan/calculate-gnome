@@ -3,3 +3,5 @@
 # (colord-sane[...]: segfault, error 4 in libc.so.6)
 =media-gfx/epsonscan2-6.6.42.0
 
+# bug: the focus of the window is lost after switching the input method 'win + space'
+=x11-wm/mutter-43.3
