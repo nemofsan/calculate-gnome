@@ -1,0 +1,43 @@
+# Calculate path=/etc/profile.d name=trusted-desktop.sh chmod=0755
+#!/bin/bash
+
+# Language selection
+#?os_locale_lang==bg_BG#
+DESKTOP="Работен плот"
+#os_locale_lang#
+#?os_locale_lang==de_DE#
+DESKTOP="Arbeitsfläche"
+#os_locale_lang#
+#?os_locale_lang==es_ES#
+DESKTOP="Escritorio"
+#os_locale_lang#
+#?os_locale_lang==fr_FR#
+DESKTOP="Bureau"
+#os_locale_lang#
+#?os_locale_lang==it_IT#
+DESKTOP="Ambiente grafico"
+#os_locale_lang#
+#?os_locale_lang==pl_PL#
+DESKTOP="Pulpit"
+#os_locale_lang#
+#?os_locale_lang==pt_BR#
+DESKTOP="Área de trabalho"
+#os_locale_lang#
+#?os_locale_lang==ru_RU#
+DESKTOP="Рабочий стол"
+#os_locale_lang#
+#?os_locale_lang==uk_UA#
+DESKTOP="Робочий стіл"
+#os_locale_lang#
+#?os_locale_lang!=bg_BG&&os_locale_lang!=de_DE&&os_locale_lang!=es_ES&&os_locale_lang!=fr_FR&&os_locale_lang!=it_IT&&os_locale_lang!=pl_PL&&os_locale_lang!=pt_BR&&os_locale_lang!=ru_RU&&os_locale_lang!=uk_UA#
+DESKTOP="Desktop"
+#os_locale_lang#
+
+# Trusted files on the desktop
+for i in "${HOME}/${DESKTOP}"/*.desktop; do
+  [[ -f "${i}" ]] || break
+  gio set "${i}" "metadata::trusted" true
+done
+# Restart nautilus
+killall nautilus && nautilus &
+

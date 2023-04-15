@@ -1,0 +1,1 @@
+# Calculate append=skip os_root_type==livecd exists(#-ur_home_path-#/.calculate/ini.env)!= exists(#-ini(resource.desktop)-#)!= mergepkg(gnome-extra/gnome-shell-extension-desktop-icons-ng)!=
