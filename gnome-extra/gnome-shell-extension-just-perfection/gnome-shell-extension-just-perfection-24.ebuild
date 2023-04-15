@@ -1,38 +1,42 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 inherit gnome2-utils
 
 MY_PN="${PN/gnome-shell-extension-/}"
-MY_P="${MY_PN}-${PV}"
+MY_PV="${PV}.0"
 
-DESCRIPTION="A GNOME Shell extension that adds a blur look to different parts of the GNOME Shell, including the top panel, dash and overview."
-HOMEPAGE="https://github.com/aunetx/blur-my-shell"
-SRC_URI="https://github.com/aunetx/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="Disable GNOME Shell UI Elements, Change the Behavior and Customize your GNOME Shell Desktop."
+HOMEPAGE="https://gitlab.gnome.org/jrahmatzadeh/just-perfection"
+SRC_URI="https://gitlab.gnome.org/jrahmatzadeh/${MY_PN}/-/archive/${MY_PV}/${MY_PN}-${MY_PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="GPL-3+"
+LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-COMMON_DEPEND="dev-libs/glib:2"
+COMMON_DEPEND="
+	dev-libs/glib:2
+	sys-devel/gettext
+"
 RDEPEND="${COMMON_DEPEND}
 	app-eselect/eselect-gnome-shell-extensions
-	>=gnome-base/gnome-shell-3.36
+	>=gnome-base/gnome-shell-40.0
 "
 DEPEND="${COMMON_DEPEND}"
 BDEPEND=""
 
-S="${WORKDIR}/${MY_P}"
+S="${WORKDIR}/${MY_PN}-${MY_PV}"
 extensions=.local/share/gnome-shell/extensions
-extension_uuid="blur-my-shell@aunetx"
+extension_uuid="just-perfection-desktop@just-perfection"
 
 # Not useful for us
 src_compile() { :; }
 
 src_install() {
-	default
+	einstalldocs
+	sh scripts/build.sh -i
 	cd ${HOME}/${extensions}/"${extension_uuid}"
 	insinto /usr/share/gnome-shell/extensions/"${extension_uuid}"
 	doins -r *
@@ -42,8 +46,9 @@ src_install() {
 	doins -r locale/*
 	cd ${S}/
 	rm -r ${HOME}/.local ${HOME}/.cache || die
-	rm -r ${ED}/usr/share/gnome-shell/extensions/"${extension_uuid}"/locale || die
-	rm -r ${ED}/usr/share/gnome-shell/extensions/"${extension_uuid}"/schemas || die
+	cd ${ED}/usr/share/gnome-shell/extensions/"${extension_uuid}"
+	rm -r locale/ schemas/ || die
+	rm -f CHANGELOG.md LICENSE || die
 }
 
 pkg_preinst() {
@@ -60,5 +65,4 @@ pkg_postinst() {
 pkg_postrm() {
 	gnome2_schemas_update
 }
-
 

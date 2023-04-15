@@ -14,7 +14,7 @@ SRC_URI="https://github.com/micheleg/${MY_PN}/archive/extensions.gnome.org-v${PV
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 COMMON_DEPEND="

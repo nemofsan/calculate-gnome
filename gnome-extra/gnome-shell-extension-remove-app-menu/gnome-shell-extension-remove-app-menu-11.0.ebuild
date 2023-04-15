@@ -13,7 +13,7 @@ SRC_URI="https://github.com/stuarthayhurst/${MY_PN}/archive/v${PV}.tar.gz -> ${P
 
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 COMMON_DEPEND="dev-libs/glib:2"
