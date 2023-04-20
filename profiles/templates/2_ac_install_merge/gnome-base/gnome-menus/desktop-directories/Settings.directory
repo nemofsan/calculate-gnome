@@ -1,11 +1,31 @@
 [Desktop Entry]
+Name[bg]=Настройки
+Name[de]=Einstellungen
 Name[en_CA]=Settings
 Name[en_GB]=Settings
+Name[es]=Ajustes
+Name[fr]=Paramètres
+Name[it]=Impostazioni
+Name[pl]=Ustawienia
+Name[pt]=Definições
+Name[pt_BR]=Configurações
+Name[ro]=Setări
 Name[ru]=Настройки
+Name[uk]=Настройка
 Name=Settings
+Comment[bg]=Настройки на операционната система
+Comment[de]=Einstellungen des Betriebssystems
 Comment[en_CA]=Operating system settings
 Comment[en_GB]=Operating system settings
+Comment[es]=Configuración del sistema operativo
+Comment[fr]=Paramètres du système d'exploitation
+Comment[it]=Impostazioni del sistema operativo
+Comment[pl]=Ustawienia systemu operacyjnego
+Comment[pt]=Definições do sistema operativo
+Comment[pt_BR]=Configurações do sistema operacional
+Comment[ro]=Setările sistemului de operare
 Comment[ru]=Настройки операционной системы
+Comment[uk]=Налаштування операційної системи
 Comment=Operating system settings
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=gnome-settings
