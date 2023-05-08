@@ -1,0 +1,25 @@
+src_configure() {
+	local emesonargs=(
+		$(meson_use bluetooth)
+		-Dcups=$(usex cups enabled disabled)
+		-Ddocumentation=true # manpage
+		-Dgoa=$(usex gnome-online-accounts enabled disabled)
+		$(meson_use ibus)
+		-Dkerberos=$(usex kerberos enabled disabled)
+		$(meson_use networkmanager network_manager)
+		-Dprivileged_group=wheel
+		-Dsnap=false
+		$(meson_use test tests)
+		$(meson_use input_devices_wacom wacom)
+		#$(meson_use wayland) # doesn't do anything in 3.34 and 3.36 due to unified gudev handling code
+		# bashcompletions installed to $datadir/bash-completion/completions by v3.28.2, which is the same as $(get_bashcompdir)
+		-Dmalcontent=false # unpackaged
+		-Ddistributor_logo=/usr/share/pixmaps/calculate-gnome-control-center-logo.png
+		-Ddark_mode_distributor_logo=/usr/share/pixmaps/calculate-gnome-control-center-logo-dark.png
+	)
+	meson_src_configure
+}
+
+src_install() {
+	meson_src_install
+}
