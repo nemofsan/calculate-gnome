@@ -1,5 +1,0 @@
-# Copyright 1999-2023 Gentoo Foundation.
-# Distributed under the terms of the GNU General Public License v2
-# $Header: $
-
-sys-power/power-profiles-daemon:orcrun - Flag for working with OpenRC
