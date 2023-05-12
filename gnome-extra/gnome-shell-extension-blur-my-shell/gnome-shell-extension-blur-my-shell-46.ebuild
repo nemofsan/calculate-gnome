@@ -4,12 +4,12 @@
 EAPI=8
 inherit gnome2-utils
 
-MY_PN="${PN/gnome-shell-extension-/}-extension"
+MY_PN="${PN/gnome-shell-extension-/}"
 MY_P="${MY_PN}-${PV}"
 
-DESCRIPTION="Remove the application menu from the top bar"
-HOMEPAGE="https://github.com/stuarthayhurst/remove-app-menu-extension"
-SRC_URI="https://github.com/stuarthayhurst/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="A GNOME Shell extension that adds a blur look to different parts of the GNOME Shell, including the top panel, dash and overview."
+HOMEPAGE="https://github.com/aunetx/blur-my-shell"
+SRC_URI="https://github.com/aunetx/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
@@ -25,16 +25,25 @@ DEPEND="${COMMON_DEPEND}"
 BDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
-extension_uuid="RemoveAppMenu@Dragon8oy.com"
+extensions=.local/share/gnome-shell/extensions
+extension_uuid="blur-my-shell@aunetx"
 
 # Not useful for us
 src_compile() { :; }
 
 src_install() {
-	einstalldocs
-	cd extension
+	default
+	cd ${HOME}/${extensions}/"${extension_uuid}"
 	insinto /usr/share/gnome-shell/extensions/"${extension_uuid}"
 	doins -r *
+	insinto /usr/share/glib-2.0/schemas
+	doins schemas/*.xml
+	insinto /usr/share/locale
+	doins -r locale/*
+	cd ${S}/
+	rm -r ${HOME}/.local ${HOME}/.cache || die
+	rm -r ${ED}/usr/share/gnome-shell/extensions/"${extension_uuid}"/locale || die
+	rm -r ${ED}/usr/share/gnome-shell/extensions/"${extension_uuid}"/schemas || die
 }
 
 pkg_preinst() {
