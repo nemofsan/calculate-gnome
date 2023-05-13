@@ -7,7 +7,8 @@ It is developed based on the original Calculate Linux profiles and is compatible
 The official website of the Calculate Linux project: https://www.calculate-linux.org  
 Calculate Linux project on GitHub: https://github.com/calculatelinux  
 
-***Warning: This is an unofficial profile. Only for home use at your own risk!!!***  
+***Warning: This is an unofficial profile for personal use. If you use it, then only at your own risk!!!***  
+
 ### How do I switch to a profile in the installed Calculate linux Desktop OS?  
 **Using calculate utilities (recommended):**  
 * Press CTRL-ALT-F1 to enter console mode  
