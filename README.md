@@ -56,3 +56,6 @@ Calculate Linux project on GitHub: https://github.com/calculatelinux
 The new image will be located in `/var/calculate/linux/`  
 
 ***Warning: Takes a long time.***  
+
+### Remarks
+**Important:** When moving calculate-utils to the next version of python, it is possible that some symbolic links in the `/usr/bin/` directory may be broken. They should be corrected manually.
