@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(calculate-gnome.world)<#-cut()-#
+
+#-ini(calculate-gnome.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLDG)!=#
+!net-wireless/broadcom-sta
+!net-wireless/rtl8821cu
+#in#
