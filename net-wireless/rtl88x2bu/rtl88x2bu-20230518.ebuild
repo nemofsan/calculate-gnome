@@ -1,11 +1,11 @@
-# Copyright 2022 Calculate Authors
+# Copyright 2023 Calculate Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 inherit linux-mod
 
-COMMIT="9957138ac30529a06bfcbc36eb51006a948b0967"
+COMMIT="41e982715d6a83893c64273184f263bb99be93e7"
 
 DESCRIPTION="rtl88x2bu driver updated for current kernels"
 HOMEPAGE="https://github.com/cilynx/rtl88x2bu"
@@ -14,7 +14,6 @@ SRC_URI="https://github.com/cilynx/rtl88x2bu/archive/${COMMIT}.tar.gz -> rtl88x2
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="dist-kernel"
 
 RDEPEND="virtual/linux-sources"
 DEPEND="${RDEPEND}"
