@@ -2,7 +2,6 @@
 
 #?in(os_linux_pkglist, CLDG)!=#
 net-wireless/rtl8814au
-net-wireless/rtl8821ce
 net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 sys-firmware/b43-firmware
