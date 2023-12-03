@@ -27,6 +27,9 @@
 >=gnome-extra/gnome-characters-45.0-r1
 >=gnome-extra/gnome-contacts-45.0
 >=gnome-extra/gnome-shell-extensions-45.0
+>=gnome-extra/gnome-shell-extension-appindicator-57
+>=gnome-extra/gnome-shell-extension-applications-overview-tooltip-19
+>=gnome-extra/gnome-shell-extension-desktop-icons-ng-47.0.7
 >=gnome-extra/gnome-system-monitor-45.0.2
 >=gnome-extra/gnome-tweaks-45.0
 >=gnome-extra/gnome-user-docs-45.0
