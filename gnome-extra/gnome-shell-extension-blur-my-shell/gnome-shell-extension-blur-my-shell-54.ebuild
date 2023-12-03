@@ -19,13 +19,12 @@ IUSE=""
 COMMON_DEPEND="dev-libs/glib:2"
 RDEPEND="${COMMON_DEPEND}
 	app-eselect/eselect-gnome-shell-extensions
-	>=gnome-base/gnome-shell-3.36
+	>=gnome-base/gnome-shell-45
 "
 DEPEND="${COMMON_DEPEND}"
 BDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
-extensions=.local/share/gnome-shell/extensions
 extension_uuid="blur-my-shell@aunetx"
 
 # Not useful for us
@@ -33,14 +32,13 @@ src_compile() { :; }
 
 src_install() {
 	default
-	cd ${HOME}/${extensions}/"${extension_uuid}"
 	insinto /usr/share/gnome-shell/extensions/"${extension_uuid}"
-	doins -r *
+	doins -r ${HOME}/.local/share/gnome-shell/extensions/"${extension_uuid}"/*
 	insinto /usr/share/glib-2.0/schemas
-	doins schemas/*.xml
+	doins ${HOME}/.local/share/gnome-shell/extensions/"${extension_uuid}"/schemas/*.xml
 	insinto /usr/share/locale
-	doins -r locale/*
-	cd ${S}/
+	doins -r ${HOME}/.local/share/gnome-shell/extensions/"${extension_uuid}"/locale/*
+
 	rm -r ${HOME}/.local ${HOME}/.cache || die
 	rm -r ${ED}/usr/share/gnome-shell/extensions/"${extension_uuid}"/locale || die
 	rm -r ${ED}/usr/share/gnome-shell/extensions/"${extension_uuid}"/schemas || die
@@ -60,5 +58,3 @@ pkg_postinst() {
 pkg_postrm() {
 	gnome2_schemas_update
 }
-
-

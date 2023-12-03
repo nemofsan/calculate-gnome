@@ -1,1 +1,49 @@
-~gnome-extra/gnome-tweaks-42_beta amd64
+<app-editors/gnome-text-editor-45.0 amd64
+
+<app-text/evince-45.0 amd64
+
+<dev-lang/vala-0.56.13 amd64
+
+<dev-libs/vala-common-0.56.13 amd64
+
+<gnome-base/dconf-editor-45.0.1 amd64
+<gui-libs/libadwaita-45.0.1 amd64
+<gnome-base/gnome-control-center-45.0 amd64
+<gnome-base/gnome-session-45.0 amd64
+<gnome-base/gnome-settings-daemon-45.0 amd64
+<gnome-base/gnome-shell-45.0 amd64
+<gnome-base/gsettings-desktop-schemas-45.0 amd64
+<gnome-base/nautilus-45.0 amd64
+
+<gnome-extra/gnome-boxes-45.0 amd64
+<gnome-extra/gnome-calculator-45.0.2 amd64
+<gnome-extra/gnome-calendar-45.0 amd64
+<gnome-extra/gnome-characters-45.0-r1 amd64
+<gnome-extra/gnome-contacts-45.0 amd64
+<gnome-extra/gnome-shell-extensions-45.0 amd64
+<gnome-extra/gnome-system-monitor-45.0.2 amd64
+<gnome-extra/gnome-tweaks-45.0 amd64
+<gnome-extra/gnome-user-docs-45.0 amd64
+<gnome-extra/gnome-weather-45.0 amd64
+<gnome-extra/sushi-45.0 amd64
+<gnome-extra/tecla-45.0 amd64
+
+<gui-libs/gtk-4.12.2 amd64
+<gui-libs/libadwaita-1.3.5 amd64
+
+<media-gfx/eog-45.1-r1 amd64
+<media-gfx/gnome-font-viewer-45.0 amd64
+
+<=media-sound/gnome-music-45.0 amd64
+
+<net-wireless/gnome-bluetooth-42.7 amd64
+
+<sys-apps/baobab-45.0 amd64
+<sys-apps/gnome-disk-utility-45.0 amd64
+<sys-apps/xdg-desktop-portal-gnome-45.0 amd64
+
+<x11-themes/adwaita-icon-theme-45.0 amd64
+<x11-themes/gnome-backgrounds-45.0 amd64
+
+<x11-wm/mutter-45.0 amd64
+

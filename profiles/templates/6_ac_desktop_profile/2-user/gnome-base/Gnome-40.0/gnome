@@ -143,35 +143,16 @@ favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Cale
 [gnome/shell/extensions/blur-my-shell/applications]
 blur=false
 
-[gnome/shell/extensions/blur-my-shell/dash-to-dock]
-blur=false
-
-[gnome/shell/extensions/blur-my-shell/overview]
-blur=true
-brightness=0.80000000000000004
-customize=true
-style-components=1
-
 [gnome/shell/extensions/blur-my-shell/panel]
-blur=true
 brightness=0.68000000000000005
 customize=true
 override-background-dynamically=true
-static-blur=true
-style-panel=0
-unblur-dynamically=true
 unblur-in-overview=false
 
 [gnome/shell/extensions/dash-to-dock]
-apply-custom-theme=false
-background-opacity=0.80000000000000004
-custom-background-color=false
 custom-theme-shrink=true
 dash-max-icon-size=42
-dock-position='BOTTOM'
-height-fraction=0.90000000000000002
-preferred-monitor=-2
-show-apps-at-top=false
+running-indicator-style='BINARY'
 transparency-mode='DYNAMIC'
 
 [gnome/shell/extensions/ding]
@@ -180,9 +161,6 @@ show-trash=false
 show-volumes=false
 
 [gnome/shell/extensions/just-perfection]
-activities-button-icon-monochrome=false
-activities-button-icon-path='file:///usr/share/pixmaps/calculate/start-here-blue.svg'
-app-menu=false
 startup-status=0
 
 [gnome/terminal/legacy]
@@ -190,3 +168,6 @@ theme-variant='system'
 
 [gnome/tweaks]
 show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+sort-directories-first=true

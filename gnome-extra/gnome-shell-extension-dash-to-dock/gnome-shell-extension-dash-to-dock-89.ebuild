@@ -6,7 +6,7 @@ inherit gnome2-utils
 
 
 MY_PN="${PN/gnome-shell-extension-/}"
-MY_EXT="${PN/gnome-shell-extension-/}-extensions.gnome.org"
+MY_EXT="${MY_PN}-extensions.gnome.org"
 
 DESCRIPTION="A dock for the Gnome Shell"
 HOMEPAGE="https://github.com/micheleg/dash-to-dock"
@@ -23,7 +23,7 @@ COMMON_DEPEND="
 "
 RDEPEND="${COMMON_DEPEND}
 	app-eselect/eselect-gnome-shell-extensions
-	>=gnome-base/gnome-shell-40.0
+	>=gnome-base/gnome-shell-45
 "
 DEPEND="${COMMON_DEPEND}"
 
