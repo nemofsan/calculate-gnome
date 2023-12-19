@@ -7,7 +7,7 @@
 <dev-libs/vala-common-0.56.13 amd64
 
 <gnome-base/dconf-editor-45.0.1 amd64
-<gui-libs/libadwaita-45.0.1 amd64
+<gnome-base/gdm-45.0.1 amd64
 <gnome-base/gnome-control-center-45.0 amd64
 <gnome-base/gnome-session-45.0 amd64
 <gnome-base/gnome-settings-daemon-45.0 amd64
