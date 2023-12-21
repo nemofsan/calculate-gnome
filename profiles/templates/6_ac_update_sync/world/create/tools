@@ -5,13 +5,11 @@ app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
 app-text/tree
-net-misc/dhcp
 sys-apps/texinfo
 sys-auth/pam_update
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
 sys-fs/f2fs-tools
-sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
