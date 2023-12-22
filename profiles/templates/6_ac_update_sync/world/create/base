@@ -3,6 +3,7 @@
 #?in(os_linux_pkglist, calculate)!=#
 app-editors/nano
 media-fonts/terminus-font
+net-misc/dhcpcd
 sys-apps/busybox
 sys-apps/calculate-toolkit
 sys-apps/ifplugd
