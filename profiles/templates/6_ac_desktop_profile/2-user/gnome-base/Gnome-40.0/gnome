@@ -137,17 +137,8 @@ sleep-inactive-battery-type='nothing'
 [gnome/shell]
 app-picker-layout=[{'Multimedia': <{'position': <0>}>, 'Graphics': <{'position': <1>}>, 'Internet': <{'position': <2>}>, 'Office': <{'position': <3>}>, 'System': <{'position': <4>}>, 'Accessories': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'Settings': <{'position': <7>}>}]
 disable-user-extensions=false
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'applications-overview-tooltip@RaphaelRochet', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'blur-my-shell@aunetx', 'legacyschemeautoswitcher@joshimukul29.gmail.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com', 'ding@rastersoft.com', 'legacyschemeautoswitcher@joshimukul29.gmail.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Polari.desktop', 'libreoffice-startcenter.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Music.desktop', 'org.gnome.Totem.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'cl-console-gui-update.desktop']
-
-[gnome/shell/extensions/blur-my-shell/applications]
-blur=false
-
-[gnome/shell/extensions/blur-my-shell/panel]
-brightness=0.68000000000000005
-customize=true
-override-background-dynamically=true
-unblur-in-overview=false
 
 [gnome/shell/extensions/dash-to-dock]
 click-action='focus-or-appspread'
