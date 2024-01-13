@@ -68,6 +68,10 @@ sys-power/powertop
 #in#
 
 #?in(os_linux_pkglist, CLDG)!=#
+sys-power/power-profiles-daemon
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
 sys-power/upower
 #in#
 
