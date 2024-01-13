@@ -38,6 +38,4 @@ for i in "${HOME}/${DESKTOP}"/*.desktop; do
   [[ -f "${i}" ]] || break
   gio set "${i}" "metadata::trusted" true
 done
-# Restart nautilus
-killall nautilus && nautilus &
 
