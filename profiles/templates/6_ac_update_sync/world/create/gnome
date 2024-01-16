@@ -77,10 +77,7 @@ net-irc/polari
 # extensions
 gnome-extra/gnome-browser-connector
 gnome-extra/gnome-shell-extension-appindicator
-gnome-extra/gnome-shell-extension-applications-overview-tooltip
-gnome-extra/gnome-shell-extension-blur-my-shell
 gnome-extra/gnome-shell-extension-dash-to-dock
 gnome-extra/gnome-shell-extension-desktop-icons-ng
-gnome-extra/gnome-shell-extension-just-perfection
 gnome-extra/gnome-shell-extension-legacy-theme-auto-switcher
 #in#
