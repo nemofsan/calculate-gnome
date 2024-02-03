@@ -1,3 +1,5 @@
 # Use binary packages
-app-office/libreoffice -eds
+app-office/libreoffice -eds -gstreamer
+gnome-base/nautilus -gnome
+media-gfx/gimp -gnome
 net-libs/webkit-gtk -lcms

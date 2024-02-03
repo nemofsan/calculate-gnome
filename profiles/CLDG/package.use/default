@@ -17,6 +17,9 @@ media-video/mpv lua_single_target_luajit
 # Transmission
 net-p2p/transmission gtk -qt5
 
+# Enable pam_gnome_keyring.so module
+sys-auth/pambase gnome-keyring
+
 # gnome-terminal
 x11-terms/gnome-terminal gnome-shell
 
