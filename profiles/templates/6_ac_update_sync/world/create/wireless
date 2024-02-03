@@ -1,6 +1,7 @@
 # Calculate format=world name=world
 
 #?in(os_linux_pkglist, CLDG)!=#
+net-wireless/broadcom-sta
 net-wireless/rtl8814au
 net-wireless/wireless-tools
 net-wireless/wpa_supplicant
