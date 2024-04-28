@@ -1,46 +1,46 @@
-~app-editors/gnome-text-editor-45.1 amd64
+~app-editors/gnome-text-editor-45.3 amd64
 
 ~app-text/evince-45.0 amd64
 
 ~dev-cpp/gtkmm-4.12.0 ~amd64
 
-~dev-lang/vala-0.56.14 amd64
+~dev-lang/vala-0.56.16 amd64
 
-~dev-libs/vala-common-0.56.14 amd64
+~dev-libs/vala-common-0.56.16 amd64
 
 ~gnome-base/dconf-editor-45.0.1 amd64
 ~gnome-base/gdm-45.0.1-r1 amd64
-~gnome-base/gnome-control-center-45.2 amd64
+~gnome-base/gnome-control-center-45.3 amd64
 ~gnome-base/gnome-session-45.0-r1 amd64
-~gnome-base/gnome-settings-daemon-45.0 amd64
+~gnome-base/gnome-settings-daemon-45.1 amd64
 ~gnome-base/gnome-shell-45.2 amd64
 ~gnome-base/gsettings-desktop-schemas-45.0 amd64
 ~gnome-base/nautilus-45.2.1-r1 amd64
 
-<gnome-extra/gnome-boxes-45.0 amd64
+~gnome-extra/gnome-boxes-45.0 amd64
 ~gnome-extra/gnome-calculator-45.0.2 amd64
-~gnome-extra/gnome-calendar-45.1 amd64
+~gnome-extra/gnome-calendar-45.1-r1 amd64
 ~gnome-extra/gnome-characters-45.0-r1 amd64
-~gnome-extra/gnome-contacts-45.0 amd64
+~gnome-extra/gnome-contacts-45.1 amd64
 ~gnome-extra/gnome-shell-extensions-45.2 amd64
 ~gnome-extra/gnome-system-monitor-45.0.2 amd64
-~gnome-extra/gnome-tweaks-45.0 amd64
-~gnome-extra/gnome-user-docs-45.1 amd64
+~gnome-extra/gnome-tweaks-45.2 amd64
+~gnome-extra/gnome-user-docs-45.5 amd64
 ~gnome-extra/gnome-weather-45.0 amd64
 ~gnome-extra/sushi-45.0 amd64
 ~gnome-extra/tecla-45.0 amd64
 
 ~gui-apps/gnome-console-45.0-r1 amd64
 
-~gui-libs/gtk-4.12.4 amd64
-~gui-libs/libadwaita-1.4.2 amd64
+~gui-libs/gtk-4.12.5 amd64
+~gui-libs/libadwaita-1.4.4 amd64
 
-<media-gfx/eog-45.2 amd64
+~media-gfx/eog-45.3 amd64
 ~media-gfx/gnome-font-viewer-45.0 amd64
 
-<media-sound/gnome-music-45.0 amd64
+~media-sound/gnome-music-45.1 amd64
 
-~net-wireless/gnome-bluetooth-42.7 amd64
+~net-wireless/gnome-bluetooth-42.8 amd64
 
 ~sys-apps/baobab-45.0 amd64
 ~sys-apps/gnome-disk-utility-45.1 amd64
