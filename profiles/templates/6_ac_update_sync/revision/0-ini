@@ -1,4 +1,4 @@
 # Calculate format=samba name=ini.env ini(calculate-gnome.revision)==
 
 [calculate-gnome]
-revision = 20230222
+revision = 20240430

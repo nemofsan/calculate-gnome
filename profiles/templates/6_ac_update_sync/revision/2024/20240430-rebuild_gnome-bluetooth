@@ -1,0 +1,4 @@
+# Calculate format=samba name=ini.env ini(calculate-gnome.revision)<#-cut(0,-)-# rebuild=net-wireless/gnome-bluetooth
+
+[calculate-gnome]
+revision = #-cut(0)-#
