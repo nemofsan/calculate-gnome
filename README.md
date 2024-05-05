@@ -37,17 +37,12 @@ Calculate Linux project on GitHub: https://github.com/calculatelinux
 `cl-builder-update -f`
 * Update the OS build profile by running the command  
 `cl-builder-profile --id distros:CLS/amd64/20 --url https://github.com/nemofsan/calculate-gnome.git CLDG/amd64/20`
-* Log in to chroot by running the command from root or using sudo  
-`chroot /run/calculate/mount/distros_CLS_amd64_20/`
-* In chroot, fix the cyclic dependency error (temporarily) by running the command  
-`mkdir /etc/portage/package.use`  
-`echo "media-libs/libsndfile minimal" > /etc/portage/package.use/circular-dependencies`
-* Exit the chroot by running the `exit` command  
 * Update the OS build to reformat the world  
-* Log in to the chroot again  
-* In the chroot, delete the folder with the circular-dependencies file by running the command  
-`rm -r /etc/portage/package.use`
-* Update the OS build again  
+* Log in to the chroot by running the command from root or using sudo  
+`chroot /run/calculate/mount/distros_CLS_amd64_20/`
+* In the chroot, add the power-profiles-daemon init script to the default runlevel by running the command  
+`rc-update add power-profiles-daemon default`
+* Exit the chroot by running the `exit` command  
 * Create a new image (proprietary video drivers are not included in the image, the '--video on' parameter will enable them) by running the command  
 `cl-builder-image --id distros:CLS/amd64/20 --video off `
 * Complete the OS build by running the command  
