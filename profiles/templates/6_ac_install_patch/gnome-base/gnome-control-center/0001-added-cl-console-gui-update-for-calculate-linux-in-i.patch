@@ -1,0 +1,57 @@
+# Calculate format=diff merge(gnome-base/gnome-control-center)==45.3,45.4
+From 1e85d7bd8db5fef704190e8fa1510a47aec37de4 Mon Sep 17 00:00:00 2001
+From: nemofsan <nemofsan@yandex.ru>
+Date: Thu, 9 May 2024 00:43:14 +0300
+Subject: [PATCH] added: cl-console-gui-update for calculate linux in
+ info-overvie
+
+---
+ panels/info-overview/cc-info-overview-panel.c | 18 +++++++++++++++---
+ 1 file changed, 15 insertions(+), 3 deletions(-)
+
+diff --git a/panels/info-overview/cc-info-overview-panel.c b/panels/info-overview/cc-info-overview-panel.c
+index 700df61d2..1ec03f7d1 100644
+--- a/panels/info-overview/cc-info-overview-panel.c
++++ b/panels/info-overview/cc-info-overview-panel.c
+@@ -122,6 +122,13 @@ does_gpk_update_viewer_exist (void)
+   return path != NULL;
+ }
+ 
++static gboolean
++does_cl_console_gui_update_exist (void)
++{
++  g_autofree gchar *path = g_find_program_in_path ("cl-console-gui-update");
++  return path != NULL;
++}
++
+ static void
+ cc_info_panel_open_system_details (CcInfoOverviewPanel *self)
+ {
+@@ -139,8 +146,13 @@ cc_info_panel_open_software_update (CcInfoOverviewPanel *self)
+   g_autoptr(GError) error = NULL;
+   gboolean ret;
+   char *argv[3];
+-
+-  if (does_gnome_software_exist ())
++  
++  if (does_cl_console_gui_update_exist ())
++    {
++      argv[0] = "cl-console-gui-update";
++      argv[1] = NULL;
++    }
++  else if (does_gnome_software_exist ())
+     {
+       argv[0] = "gnome-software";
+       argv[1] = "--mode=updates";
+@@ -242,7 +254,7 @@ cc_info_overview_panel_init (CcInfoOverviewPanel *self)
+ 
+   g_resources_register (cc_info_overview_get_resource ());
+ 
+-  if ((!does_gnome_software_exist () || !does_gnome_software_allow_updates ()) && !does_gpk_update_viewer_exist ())
++  if ((!does_gnome_software_exist () || !does_gnome_software_allow_updates ()) && !does_gpk_update_viewer_exist () && !does_cl_console_gui_update_exist ())
+     gtk_widget_set_visible (GTK_WIDGET (self->software_updates_group), FALSE);
+ 
+   info_overview_panel_setup_overview (self);
+-- 
+2.43.2
+
