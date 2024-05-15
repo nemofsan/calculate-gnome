@@ -1,0 +1,13 @@
+# Calculate format=world name=world ini(calculate-gnome.world)<#-cut()-#
+
+#-ini(calculate-gnome.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLDG)!=#
+gui-apps/gnome-console
+net-libs/glib-networking
+
+!app-dicts/gnome-dictionary
+!media-gfx/gnome-screenshot
+!media-sound/sound-juicer
+!x11-terms/gnome-terminal
+#in#

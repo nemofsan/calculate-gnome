@@ -14,14 +14,14 @@ app-crypt/gcr
 gnome-base/nautilus
 gnome-base/gnome-keyring
 gnome-extra/evolution-data-server
+net-libs/glib-networking
 
-app-crypt/seahorse
 app-editors/gnome-text-editor
 app-text/evince
 gnome-extra/gnome-contacts
 media-gfx/eog
 media-video/totem
-x11-terms/gnome-terminal
+gui-apps/gnome-console
 
 gnome-extra/gnome-user-docs
 gnome-extra/yelp
@@ -52,18 +52,16 @@ gnome-extra/gnome-calendar
 gnome-extra/gnome-characters
 sys-apps/gnome-disk-utility
 media-gfx/gnome-font-viewer
-media-gfx/gnome-screenshot
 gnome-extra/gnome-system-monitor
 gnome-extra/gnome-weather
 gnome-extra/gucharmap
 gnome-extra/sushi
-media-sound/sound-juicer
 
 gnome-base/dconf-editor
-app-dicts/gnome-dictionary
 mail-client/evolution
 gnome-extra/gnome-tweaks
 gnome-extra/nautilus-sendto
+app-crypt/seahorse
 
 gnome-extra/gnome-user-share
 media-gfx/shotwell
