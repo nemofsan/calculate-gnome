@@ -1,4 +1,4 @@
-# Calculate path=/usr/share/gnome-background-properties name=calculate-gnome.xml pkg(gnome-base/gnome-session)!=
+# Calculate path=/usr/share/gnome-background-properties name=calculate.xml pkg(gnome-base/gnome-session)!=
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
