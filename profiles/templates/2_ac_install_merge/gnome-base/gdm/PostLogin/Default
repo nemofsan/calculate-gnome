@@ -2,6 +2,6 @@
 #!/bin/sh
 # PostLogin - running the script from the root user before starting the session (after successful user authentication)
 
-#?pkg(sys-apps/calculate-utils:3[desktop])!=#
+#?pkg(sys-apps/calculate-utils[desktop])!=#
 /usr/share/calculate/xdm/xdm --login
 #pkg#

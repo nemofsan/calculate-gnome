@@ -2,6 +2,6 @@
 #!/bin/sh
 # PostSession - running the script from the root user when the session ends
 
-#?pkg(sys-apps/calculate-utils:3[desktop])!=#
+#?pkg(sys-apps/calculate-utils[desktop])!=#
 /usr/share/calculate/xdm/xdm --logout
 #pkg#
