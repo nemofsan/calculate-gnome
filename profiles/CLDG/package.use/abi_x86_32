@@ -1,5 +1,0 @@
-dev-libs/libgusb abi_x86_32
-dev-libs/json-glib abi_x86_32
-dev-util/sysprof-capture abi_x86_32
-x11-misc/colord abi_x86_32
-
