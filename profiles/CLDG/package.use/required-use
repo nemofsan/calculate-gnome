@@ -1,3 +1,5 @@
 # pulseaudio? ( sound )
 dev-libs/efl sound
 
+# qt5? ( !qt6 )
+media-libs/simage -qt5

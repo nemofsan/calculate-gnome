@@ -1,5 +1,5 @@
 # at-most-one-of ( alsa pulseaudio )
 app-emulation/fuse -pulseaudio
 
-# at-most-one-of ( gtk qt5 )
-media-libs/libmediaart gtk -qt5
+# at-most-one-of ( qt5 qt6 )
+net-p2p/transmission -qt5

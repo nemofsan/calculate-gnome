@@ -4,8 +4,8 @@ dev-lang/python sqlite
 # Required by media-gfx/digikam
 media-gfx/exiv2 xmp
 
-# Required by a global USE=wayland
-media-libs/cogl kms
+# Required by media-gfx/gnome-photos
+media-libs/gegl raw
 
 # Required by media-sound/gnome-music
 media-libs/grilo playlist
@@ -16,15 +16,11 @@ media-libs/grilo playlist
 # Required by gnome-base/gnome-control-center
 media-libs/libcanberra sound
 
-# Required by x11-wm/mutter[wayland], bug #547300
->=media-libs/mesa-10.3 gles2
-
 # Required by gnome-extra/gnome-boxes
 net-misc/spice-gtk gtk3
 
-# required by x11-wm/mutter-45.1[wayland]
->=x11-base/xwayland-23.2.1 libei
+# Required by x11-libs/libxkbcommon[X]
+x11-libs/libxcb xkb
 
 # required by media-gfx/simple-scan[colord]
 x11-misc/colord vala
-
