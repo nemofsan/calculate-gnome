@@ -1,4 +1,4 @@
 # Calculate format=samba path=/var/lib/calculate name=ini.env cl_update_world==rebuild||cl_update_world==merge||ini(calculate-gnome.world)==
 
 [calculate-gnome]
-world = 20240721
+world = 20241017

@@ -16,17 +16,18 @@ sys-fs/xfsprogs
 #?in(os_linux_pkglist, CLDG)!=#
 app-admin/logrotate
 app-admin/syslog-ng
-sys-apps/ethtool
 sys-apps/usbutils
 sys-process/cronie
 #in#
 
 #?in(os_linux_pkglist, CLDG)!=#
+app-editors/nano
 app-editors/vim
 app-vim/colorschemes
-sys-apps/inxi
-sys-fs/mdadm
-sys-process/htop
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
+sys-apps/ethtool
 #in#
 
 #?in(os_linux_pkglist, CLDG)!=#
@@ -46,7 +47,6 @@ sys-apps/smartmontools
 sys-fs/dmraid
 sys-fs/dosfstools
 sys-fs/mtools
-sys-fs/ncdu
 sys-process/lsof
 #in#
 
@@ -55,15 +55,18 @@ app-arch/p7zip
 app-arch/rar
 app-arch/unzip
 sys-apps/hdparm
+sys-apps/inxi
 sys-apps/keyexec
 sys-apps/pcmciautils
 sys-apps/usb_modeswitch
 sys-fs/exfatprogs
+sys-fs/mdadm
 sys-fs/ntfs3g
 sys-power/acpi
 sys-power/acpid
 sys-power/cpupower
 sys-power/powertop
+sys-process/htop
 #in#
 
 #?in(os_linux_pkglist, CLDG)!=#

@@ -1,7 +1,6 @@
 # Calculate format=world name=world
 
 #?in(os_linux_pkglist, calculate)!=#
-app-editors/nano
 media-fonts/terminus-font
 sys-apps/busybox
 sys-apps/calculate-toolkit
