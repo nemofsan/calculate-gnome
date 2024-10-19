@@ -6,11 +6,13 @@ src_configure() {
 	# Do not trust with LTO either
 	append-flags -fno-strict-aliasing
 	filter-lto
-	
+
 	local emesonargs=(
 		$(meson_use bluetooth)
 		-Dcups=$(usex cups enabled disabled)
+		-Ddeprecated-declarations=disabled
 		-Ddocumentation=true # manpage
+		-Dlocation-services=$(usex geolocation enabled disabled)
 		-Dgoa=$(usex gnome-online-accounts enabled disabled)
 		$(meson_use ibus)
 		-Dkerberos=$(usex kerberos enabled disabled)

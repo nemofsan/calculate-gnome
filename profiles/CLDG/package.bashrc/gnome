@@ -1,1 +1,2 @@
-gnome-base/gnome-control-center logocontrol python-not-any.conf
+<gnome-base/gnome-control-center-46 logocontrol-45 python-not-any.conf
+>=gnome-base/gnome-control-center-46 logocontrol-46 python-not-any.conf
