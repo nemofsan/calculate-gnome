@@ -8,7 +8,3 @@ sys-apps/ifplugd
 sys-apps/less
 sys-kernel/dracut
 #in#
-
-#?in(os_linux_pkglist, CLDG)!=#
-net-misc/dhcpcd
-#in#
