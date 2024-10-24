@@ -23,5 +23,8 @@ sys-auth/elogind acl
 # Enable pam_gnome_keyring.so module
 sys-auth/pambase gnome-keyring
 
+# VIDEO_CARDS setting to build driver for qxl (QEMU virtual GPU)
+x11-base/xorg-drivers video_cards_qxl
+
 # gnome-terminal
 x11-terms/gnome-terminal gnome-shell
