@@ -9,7 +9,9 @@ USE="${USE} gstreamer"
 USE="${USE} nautilus"
 USE="${USE} tracker"
 
-EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg-exclude gnome-base/gnome-control-center \
-                                            --usepkg-exclude x11-base/xorg-server"
+USEPKG_EXCLUDE="--usepkg-exclude='gnome-base/gnome-control-center
+                                  x11-base/xorg-server'"
+
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} ${USEPKG_EXCLUDE}"
 
 THEMES="CLDG"
