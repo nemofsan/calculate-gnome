@@ -4,7 +4,6 @@
 net-dialup/pptpclient
 net-dialup/rp-pppoe
 net-dialup/xl2tpd
-net-firewall/shorewall
 #in#
 
 #?in(os_linux_pkglist, CLDG)!=#
