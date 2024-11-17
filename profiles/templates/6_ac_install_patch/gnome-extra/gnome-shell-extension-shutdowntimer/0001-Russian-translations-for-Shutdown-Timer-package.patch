@@ -1,0 +1,787 @@
+# Calculate format=diff
+From fde31f4144d7df78e3606d48f8e5f818e2f65fad Mon Sep 17 00:00:00 2001
+From: nemofsan <nemofsan@yandex.ru>
+Date: Sun, 17 Nov 2024 17:14:47 +0300
+Subject: [PATCH] Russian translations for Shutdown Timer package
+
+---
+ po/ru.po | 302 +++++++++++++++++++++++++++++--------------------------
+ 1 file changed, 157 insertions(+), 145 deletions(-)
+
+diff --git a/po/ru.po b/po/ru.po
+index b39e39a..a7c7dc4 100644
+--- a/po/ru.po
++++ b/po/ru.po
+@@ -1,86 +1,85 @@
+-#
+-# 	AUTHOR: Daniel Neumann
++# Russian translations for Shutdown Timer package.
++# Copyright (C) 2024 Shutdown Timer
++# This file is distributed under the same license as the Shutdown Timer package.
++# Daniel Neumann
++# nemofsan <nemofsan@yandex.ru>, 2024.
+ #
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: Shutdown Timer GNOME Shell Extension\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2024-09-29 21:23+0200\n"
+-"PO-Revision-Date: 2022-11-01 23:30+0100\n"
+-"Last-Translator: Daniel Neumann\n"
+-"Language-Team: Russian <LL@li.org>\n"
++"PO-Revision-Date: 2024-11-16 12:46+0300\n"
++"Last-Translator: nemofsan <nemofsan@yandex.ru>\n"
++"Language-Team: Russian <>\n"
+ "Language: ru\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+-"X-Generator: Poedit 3.1.1\n"
+-"X-Poedit-SourceCharset: UTF-8\n"
+-"X-Poedit-KeywordsList: _\n"
+-"X-Poedit-Basepath: ../../..\n"
+-"X-Poedit-SearchPath-0: .\n"
++"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
++"X-Generator: Poedit 3.5\n"
+ 
+ #: src/dbus-service/action.js:175
+ msgid "Suspend then Hibernate"
+-msgstr ""
++msgstr "Приостановить, затем перейти в режим гибернации"
+ 
+ #: src/dbus-service/action.js:176
+ msgid "Hybrid Sleep"
+-msgstr ""
++msgstr "Гибридный сон"
+ 
+ #: src/dbus-service/action.js:177
+ msgid "Hibernate"
+-msgstr ""
++msgstr "Режим гибернации"
+ 
+ #: src/dbus-service/action.js:178
+ msgid "Halt"
+-msgstr ""
++msgstr "Остановить"
+ 
+ #: src/dbus-service/action.js:179
+ msgid "Suspend"
+-msgstr ""
++msgstr "Режим ожидания"
+ 
+ #: src/dbus-service/action.js:180
+ msgid "Power Off"
+-msgstr ""
++msgstr "Выключение"
+ 
+ #: src/dbus-service/action.js:181
+ msgid "Restart"
+-msgstr ""
++msgstr "Перезапуск"
+ 
+ #: src/dbus-service/action.js:182 src/ui/prefs.ui:239 src/ui/prefs.ui:442
+ msgid "Wake"
+-msgstr ""
++msgstr "Пробуждение"
+ 
+ #: src/dbus-service/action.js:183
+ msgid "No Wake"
+-msgstr ""
++msgstr "Не будить"
+ 
+ #: src/dbus-service/action.js:189
+ msgctxt "untiltext"
+ msgid "suspend and hibernate"
+-msgstr ""
++msgstr "приостановки и перевода в режим гибернации"
+ 
+ #: src/dbus-service/action.js:190
+ msgctxt "untiltext"
+ msgid "hybrid sleep"
+-msgstr ""
++msgstr "гибридного сна"
+ 
+ #: src/dbus-service/action.js:191
+ msgctxt "untiltext"
+ msgid "hibernate"
+-msgstr ""
++msgstr "режима гибернации"
+ 
+ #: src/dbus-service/action.js:192
+ msgctxt "untiltext"
+ msgid "halt"
+-msgstr ""
++msgstr "остановки"
+ 
+ #: src/dbus-service/action.js:193
+ msgctxt "untiltext"
+ msgid "suspend"
+-msgstr ""
++msgstr "режима ожидания"
+ 
+ #: src/dbus-service/action.js:194
+ msgctxt "untiltext"
+@@ -90,24 +89,24 @@ msgstr "выключения"
+ #: src/dbus-service/action.js:195
+ msgctxt "untiltext"
+ msgid "reboot"
+-msgstr ""
++msgstr "перезагрузки"
+ 
+ #: src/dbus-service/action.js:196
+ msgctxt "untiltext"
+ msgid "wakeup"
+-msgstr ""
++msgstr "пробуждения"
+ 
+ #: src/dbus-service/control.js:72
+ msgid "Can not cancel root process!"
+-msgstr ""
++msgstr "Невозможно отменить процесс получения root-прав!"
+ 
+ #: src/dbus-service/control.js:74
+ msgid "CANCEL"
+-msgstr ""
++msgstr "ОТМЕНА"
+ 
+ #: src/dbus-service/control.js:200
+ msgid "Privileged script installation required!"
+-msgstr ""
++msgstr "Требуется привилегированная установка скрипта!"
+ 
+ #: src/dbus-service/timer.js:105
+ #, javascript-format
+@@ -120,17 +119,17 @@ msgstr "%s через %s"
+ #, javascript-format
+ msgid "%s hour"
+ msgid_plural "%s hours"
+-msgstr[0] ""
+-msgstr[1] ""
+-msgstr[2] ""
++msgstr[0] "%s час"
++msgstr[1] "%s часа"
++msgstr[2] "%s часов"
+ 
+ #: src/dbus-service/timer.js:110 src/modules/menu-item.js:377
+ #, javascript-format
+ msgid "%s minute"
+ msgid_plural "%s minutes"
+-msgstr[0] "%s мин."
+-msgstr[1] "%s мин."
+-msgstr[2] "%s мин."
++msgstr[0] "%s минута"
++msgstr[1] "%s минуты"
++msgstr[2] "%s минут"
+ 
+ #: src/dbus-service/timer.js:134
+ msgid "Shutdown Timer stopped"
+@@ -139,7 +138,7 @@ msgstr "Таймер выключения остановлен"
+ #: src/dbus-service/timer.js:170
+ #, javascript-format
+ msgid "%s is not supported!"
+-msgstr ""
++msgstr "%s не поддерживается!"
+ 
+ #: src/dbus-service/timer.js:208 src/dbus-service/timer.js:267
+ #, javascript-format
+@@ -148,34 +147,36 @@ msgid ""
+ "%s\n"
+ "%s"
+ msgstr ""
++"%s\n"
++"%s"
+ 
+ #: src/dbus-service/timer.js:208
+ msgid "Wake action failed!"
+-msgstr ""
++msgstr "Действие по пробуждению не удалось!"
+ 
+ #: src/dbus-service/timer.js:267
+ msgid "Root mode protection failed!"
+-msgstr ""
++msgstr "Сбой защиты режима Root!"
+ 
+ #: src/modules/install.js:32
+ msgid "START"
+-msgstr ""
++msgstr "НАЧАЛО"
+ 
+ #: src/modules/install.js:42
+ msgid "END"
+-msgstr ""
++msgstr "КОНЕЦ"
+ 
+ #: src/modules/install.js:44
+ msgid "FAIL"
+-msgstr ""
++msgstr "НЕУДАЧА"
+ 
+ #: src/modules/install.js:62
+ msgid "install"
+-msgstr ""
++msgstr "установки"
+ 
+ #: src/modules/install.js:62
+ msgid "uninstall"
+-msgstr ""
++msgstr "удаления"
+ 
+ #: src/modules/menu-item.js:84 src/modules/menu-item.js:289
+ msgid "Shutdown Timer"
+@@ -183,49 +184,48 @@ msgstr "Таймер выключения"
+ 
+ #: src/modules/menu-item.js:116
+ msgid "Settings"
+-msgstr ""
++msgstr "Настройки"
+ 
+ #: src/modules/menu-item.js:269
+ msgid "now"
+-msgstr ""
++msgstr "сейчас"
+ 
+ #: src/modules/menu-item.js:334 src/modules/menu-item.js:373
+ msgctxt "absolute time notation"
+ msgid "%a, %R"
+-msgstr ""
++msgstr "%a, %R"
+ 
+ #: src/modules/menu-item.js:337
+ #, javascript-format
+ msgid "%s hr"
+ msgid_plural "%s hrs"
+-msgstr[0] ""
+-msgstr[1] ""
+-msgstr[2] ""
++msgstr[0] "%s ч."
++msgstr[1] "%s ч."
++msgstr[2] "%s ч."
+ 
+ #: src/modules/menu-item.js:338 src/modules/schedule-info.js:129
+ #, javascript-format
+ msgid "%s min"
+ msgid_plural "%s mins"
+-msgstr[0] ""
+-msgstr[1] ""
+-msgstr[2] ""
++msgstr[0] "%s мин."
++msgstr[1] "%s мин."
++msgstr[2] "%s мин."
+ 
+ #: src/modules/menu-item.js:344
+-#, javascript-format
+ msgid "%s (protect)"
+-msgstr ""
++msgstr "%s (защита)"
+ 
+ #: src/modules/menu-item.js:368
+ #, javascript-format
+ msgctxt "WakeButtonText"
+ msgid "%s at %s"
+-msgstr ""
++msgstr "%s в %s"
+ 
+ #: src/modules/menu-item.js:369
+ #, javascript-format
+ msgctxt "WakeButtonText"
+ msgid "%s after %s"
+-msgstr ""
++msgstr "%s через %s"
+ 
+ #: src/modules/schedule-info.js:44
+ msgid "{durationString} until {untiltext}"
+@@ -233,194 +233,218 @@ msgstr "{durationString} осталось до {untiltext}"
+ 
+ #: src/modules/schedule-info.js:48
+ msgid "{label} (sys)"
+-msgstr ""
++msgstr "{label} (sys)"
+ 
+ #: src/modules/schedule-info.js:57
+ msgctxt "absolute schedule notation"
+ msgid "%a, %T"
+-msgstr ""
++msgstr "%a, %T"
+ 
+ #: src/modules/schedule-info.js:125
+ #, javascript-format
+ msgid "%s sec"
+ msgid_plural "%s secs"
+-msgstr[0] ""
+-msgstr[1] ""
+-msgstr[2] ""
++msgstr[0] "%s сек."
++msgstr[1] "%s сек."
++msgstr[2] "%s сек."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:13
+ msgid "Maximum shutdown time (in minutes)"
+-msgstr ""
++msgstr "Максимальное время выключения (в минутах)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:14
+ msgid ""
+ "Set maximum selectable shutdown time of the slider (in minutes). Use only "
+ "values greater zero."
+ msgstr ""
++"Установите максимально выбираемое ползунком время выключения (в минутах). "
++"Используйте значения больше нуля."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:19
+ msgid "Maximum wake time (in minutes)"
+-msgstr ""
++msgstr "Максимальное время пробуждения (в минутах)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:20
+ msgid ""
+ "Set maximum selectable wake time of the slider (in minutes). Use only values "
+ "greater zero."
+ msgstr ""
++"Установите максимально выбираемое ползунком время пробуждения (в минутах). "
++"Используйте значения больше нуля."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:25
+ msgid "Reference start time for shutdown"
+-msgstr ""
++msgstr "Время начала отсчета для выключения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:26
+ msgid "Reference start time for shutdown either now or HH:MM"
+ msgstr ""
++"Время начала отсчета для выключения: now или HH:MM (now - сейчас, HH - часы, "
++"MM - минуты)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:31
+ msgid "Display shutdown time as absolute timestamp"
+-msgstr ""
++msgstr "Отображать время выключения в виде абсолютной метки времени"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:32
+ msgid "Display shutdown time as absolute timestamp \"HH:MM\""
+ msgstr ""
++"Отображение времени выключения в виде абсолютной метки времени \"HH:MM\" (HH "
++"- часы, MM - минуты)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:37
+ msgid "Reference start time for wake"
+-msgstr ""
++msgstr "Время начала отсчета для пробуждения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:38
+ msgid "Reference start time for wake either now, shutdown, or HH:MM"
+ msgstr ""
++"Время начала отсчета для пробуждения: now, shutdown или HH:MM (now - сейчас, "
++"shutdown - выключение, HH - часы, MM - минуты)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:43
+ msgid "Display wake time as absolute timestamp"
+-msgstr ""
++msgstr "Отображать время пробуждения в виде абсолютной метки времени"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:44
+ msgid "Display wake time as absolute timestamp \"HH:MM\""
+ msgstr ""
++"Отображение времени пробуждения в виде абсолютной метки времени \"HH:MM\" "
++"(HH - часы, MM - минуты)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:49
+ msgid "Automatically start and stop wake on shutdown timer toggle"
+ msgstr ""
++"Автоматически запускать и останавливать пробуждение при переключении таймера "
++"выключения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:50
+ msgid ""
+ "Enable/Disable the wake alarm when the shutdown timer is started/stopped."
+ msgstr ""
++"Включить/выключить пробуждение при запуске/остановке таймера выключения."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:55
+ msgid "Scheduled shutdown timestamp."
+-msgstr ""
++msgstr "Метка времени запланированного выключения."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:56
+ msgid "Unix time in seconds of scheduled shutdown or -1 if disabled."
+ msgstr ""
++"Unix-время запланированного выключения в секундах или -1, если отключено."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:61
+ msgid "Wake slider position (in percent)"
+-msgstr ""
++msgstr "Позиция ползунка пробуждения (в процентах)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:62
+ msgid ""
+ "Set wake slider position as percent of the maximum time. Must be in range 0 "
+ "and 100."
+ msgstr ""
++"Установите положение ползунка пробуждения в процентах от максимального "
++"времени. Должно находиться в диапазоне от 0 до 100."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:67
+ msgid "Ramp-up of non-linear wake slider value"
+-msgstr ""
++msgstr "Нелинейное увеличение значения ползунка пробуждения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:68
+ msgid "Exponential ramp-up for wake time slider"
+-msgstr ""
++msgstr "Экспоненциальный рост для ползунка времени пробуждения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:73
+ msgid "Shutdown slider position (in percent)"
+-msgstr ""
++msgstr "Позиция ползунка выключения (в процентах)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:74
+ msgid ""
+ "Set shutdown slider position as percent of the maximum time. Must be in "
+ "range 0 and 100."
+ msgstr ""
++"Установите положение ползунка выключения в процентах от максимального "
++"времени. Должно находиться в диапазоне от 0 до 100."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:79
+ msgid "Ramp-up of non-linear shutdown slider value"
+-msgstr ""
++msgstr "Нелинейное увеличение значения ползунка выключения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:80
+ msgid "Exponential ramp-up for shutdown time slider"
+-msgstr ""
++msgstr "Экспоненциальный рост для ползунка времени выключения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:85
+ #: src/ui/prefs.ui:360
+ msgid "Show settings button"
+-msgstr ""
++msgstr "Показывать кнопку настроек"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:86
+ msgid "Show/hide settings button in widget."
+-msgstr ""
++msgstr "Показывать/скрывать кнопку настроек в виджете."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:91
+ #: src/ui/prefs.ui:404
+ msgid "Show shutdown slider"
+-msgstr "Таймер выключения"
++msgstr "Показывать ползунок выключения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:92
+ msgid "Show/hide shutdown slider in widget."
+-msgstr ""
++msgstr "Показывать/скрывать ползунок выключения в виджете."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:97
+ #: src/ui/prefs.ui:458
+ msgid "Show wake slider"
+-msgstr ""
++msgstr "Показывать ползунок пробуждения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:98
+ msgid "Show/hide wake slider in widget."
+-msgstr ""
++msgstr "Показывать/скрывать ползунок пробуждения в виджете."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:103
+ msgid "Show all wake items"
+-msgstr ""
++msgstr "Показывать все пункты пробуждения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:104
+ msgid "Show/hide all wake items in widget."
+-msgstr ""
++msgstr "Показывать/скрывать все пункты пробуждения в виджете."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:109
+ #: src/ui/prefs.ui:372
+ msgid "Show notification text boxes"
+-msgstr ""
++msgstr "Показывать текстовые поля уведомлений"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:110
+ msgid "Show/hide notification text boxes on screen."
+-msgstr ""
++msgstr "Показывать/скрывать текстовые поля уведомлений на экране."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:115
+ msgid "Root mode"
+-msgstr ""
++msgstr "Режим root"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:116
+ msgid ""
+ "Set root mode on/off. In root mode powering off is done via 'pkexec' and "
+ "'shutdown' terminal command."
+ msgstr ""
++"Включить/выключить режим root. В режиме root выключение питания "
++"осуществляется с помощью команд терминала 'pkexec' и 'shutdown'."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:121
+ #: src/ui/prefs.ui:122
+ msgid "Show end-session dialog"
+-msgstr ""
++msgstr "Показывать диалоговое окно завершения сеанса"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:122
+ msgid ""
+ "Show the end-session dialog for reboot and shutdown if screensaver is "
+ "inactive."
+ msgstr ""
++"Показывать диалоговое окно завершения сеанса для перезагрузки и выключения, "
++"если заставка неактивна."
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:127
+ msgid "Shown shutdown modes"
+-msgstr ""
++msgstr "Показываемые режимы выключения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:128
+ #: src/ui/prefs.ui:390
+@@ -428,194 +452,182 @@ msgid ""
+ "Comma-separated shutdown modes which are shown in the popup menu (p: "
+ "poweroff, s: suspend, r: reboot)"
+ msgstr ""
++"Режимы выключения, разделенные запятыми, которые отображаются во всплывающем "
++"меню (p: выключение, s: режим ожидания, r: перезапуск)"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:133
+ #: src/ui/prefs.ui:116
+ msgid "Use mode"
+-msgstr ""
++msgstr "Используемый режим"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:134
+ #: src/ui/prefs.ui:117
+ msgid "Mode to use for timer action"
+-msgstr ""
++msgstr "Режим, используемый по действию таймера"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:139
+ #: src/ui/prefs.ui:416
+ msgid "Show shutdown indicator"
+-msgstr ""
++msgstr "Показывать индикатор выключения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:140
+ #: src/ui/prefs.ui:417
+ msgid "Shows the remaining time until shutdown action"
+-msgstr ""
++msgstr "Показывает оставшееся время до выключения"
+ 
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:145
+ #: src/schemas/org.gnome.shell.extensions.shutdowntimer-deminder.gschema.xml:146
+ msgid "Last selected page in the preferences."
+-msgstr ""
++msgstr "Последняя выбранная страница в настройках."
+ 
+ #: src/tool/installer.sh:66
+ msgid "Failed"
+-msgstr ""
++msgstr "Не удалось"
+ 
+ #: src/tool/installer.sh:68
+ msgid "Success"
+-msgstr ""
++msgstr "Успешно"
+ 
+ #: src/tool/installer.sh:192 src/tool/installer.sh:199
+ #: src/tool/installer.sh:204
+ msgid "Installing"
+-msgstr ""
++msgstr "Установка"
+ 
+ #: src/tool/installer.sh:192 src/tool/installer.sh:226
+ #: src/tool/installer.sh:254
+ msgid "tool"
+-msgstr ""
++msgstr "инструмента"
+ 
+ #: src/tool/installer.sh:198
+ msgid "Using legacy policykit install"
+-msgstr ""
++msgstr "Использование установки устаревшего policykit"
+ 
+ #: src/tool/installer.sh:199 src/tool/installer.sh:233
+ msgid "policykit action"
+-msgstr ""
++msgstr "действий policykit"
+ 
+ #: src/tool/installer.sh:204 src/tool/installer.sh:240
+ #: src/tool/installer.sh:255
+ msgid "policykit rule"
+-msgstr ""
++msgstr "правил policykit"
+ 
+ #: src/tool/installer.sh:226 src/tool/installer.sh:233
+ #: src/tool/installer.sh:240 src/tool/installer.sh:245
+ msgid "Uninstalling"
+-msgstr ""
++msgstr "Удаление"
+ 
+ #: src/tool/installer.sh:227 src/tool/installer.sh:234
+ #: src/tool/installer.sh:241 src/tool/installer.sh:248
+ msgid "cannot remove"
+-msgstr ""
++msgstr "не удается удалить"
+ 
+ #: src/tool/installer.sh:250
+ msgid "not installed at"
+-msgstr ""
++msgstr "не установлено в"
+ 
+ #: src/ui/prefs.ui:63
+ msgid "Install"
+-msgstr ""
++msgstr "Установить"
+ 
+ #: src/ui/prefs.ui:70
+ msgid "Install/Uninstall privileges for this user"
+-msgstr ""
++msgstr "Установить/удалить привелегии для этого пользователя"
+ 
+ #: src/ui/prefs.ui:71
+ msgid "Setup a privileged script and give user access via polkit"
+ msgstr ""
++"Установка привелегированного скрипта и предоставление пользователю доступа "
++"через polkit"
+ 
+ #: src/ui/prefs.ui:82
+ msgid "Install output"
+-msgstr ""
++msgstr "Установка вывода"
+ 
+ #: src/ui/prefs.ui:109 src/ui/prefs.ui:386
+ msgid "Shutdown"
+-msgstr "выключения"
++msgstr "Выключение"
+ 
+ #: src/ui/prefs.ui:113 src/ui/prefs.ui:243
+ msgid "Timer Action"
+-msgstr ""
++msgstr "Действие по таймеру"
+ 
+ #: src/ui/prefs.ui:123
+ msgid "Shown for reboot and shutdown if screensaver is inactive"
+ msgstr ""
++"Показывается для перезагрузки и выключения, если экранная заставка неактивна"
+ 
+ #: src/ui/prefs.ui:134
+ msgid "Toggle root shutdown with shutdown timer"
+-msgstr ""
++msgstr "Переключать выключение в режим root с помощью таймера выключения"
+ 
+ #: src/ui/prefs.ui:135
+ msgid "Runs extra 'shutdown -P/-r' command for shutdown or reboot"
+ msgstr ""
++"Выполняется дополнительная команда 'shutdown -P/-r' для выключения или "
++"перезагрузки"
+ 
+ #: src/ui/prefs.ui:148 src/ui/prefs.ui:261
+ msgid "Timer Input"
+-msgstr ""
++msgstr "Ввод таймера"
+ 
+ #: src/ui/prefs.ui:151 src/ui/prefs.ui:264
+ msgid "Reference start time"
+-msgstr ""
++msgstr "Время начала отсчета"
+ 
+ #: src/ui/prefs.ui:152
+ msgid "Options: now, HH:MM"
+-msgstr ""
++msgstr "Варианты: now, HH:MM (now - сейчас, HH - часы, MM - минуты)"
+ 
+ #: src/ui/prefs.ui:165 src/ui/prefs.ui:183
+ msgid "Shutdown slider position (in &#37;)"
+-msgstr ""
++msgstr "Положение ползунка выключения (в &#37;)"
+ 
+ #: src/ui/prefs.ui:199 src/ui/prefs.ui:312
+ msgid "Non-linear scaling or 0 to disable"
+-msgstr ""
++msgstr "Нелинейное масштабирование (0 - отключено)"
+ 
+ #: src/ui/prefs.ui:218
+ msgid "Maximum shutdown timer value (in minutes)"
+-msgstr ""
++msgstr "Максимальное значение таймера выключения (в минутах)"
+ 
+ #: src/ui/prefs.ui:247
+ msgid "Toggle wake with timer action"
+-msgstr ""
++msgstr "Переключать режим пробуждения с помощью таймера"
+ 
+ #: src/ui/prefs.ui:265
+ msgid "Options: now, shutdown, HH:MM"
+ msgstr ""
++"Варианты: now, shutdown, HH:MM (now - сейчас, shutdown - выключение, HH - "
++"часы, MM - минуты)"
+ 
+ #: src/ui/prefs.ui:278 src/ui/prefs.ui:296
+ msgid "Wake slider position (in &#37;)"
+-msgstr ""
++msgstr "Позиция ползунка пробуждения (в &#37;)"
+ 
+ #: src/ui/prefs.ui:331
+ msgid "Maximum wake timer value (in minutes)"
+-msgstr ""
++msgstr "Максимальное значение таймера пробуждения (в минутах)"
+ 
+ #: src/ui/prefs.ui:352
+ msgid "Display"
+-msgstr ""
++msgstr "Отображение"
+ 
+ #: src/ui/prefs.ui:356
+ msgid "General"
+-msgstr ""
++msgstr "Основные"
+ 
+ #: src/ui/prefs.ui:389
+ msgid "Show shutdown items"
+-msgstr ""
++msgstr "Показывать пункты выключения"
+ 
+ #: src/ui/prefs.ui:429
+ msgid "Absolute shutdown time selection"
+-msgstr ""
++msgstr "Выбор абсолютного времени выключения"
+ 
+ #: src/ui/prefs.ui:446
+ msgid "Show wake items"
+-msgstr ""
++msgstr "Показывать пункты пробуждения"
+ 
+ #: src/ui/prefs.ui:470
+ msgid "Absolute wake time selection"
+-msgstr ""
+-
+-#~ msgctxt "checktext"
+-#~ msgid "shutdown"
+-#~ msgstr "выключения"
+-
+-#, javascript-format
+-#~ msgctxt "StartSchedulePopup"
+-#~ msgid "System will %s in %s"
+-#~ msgstr "Система будет %s через %s"
+-
+-#~ msgid "minute"
+-#~ msgid_plural "minutes"
+-#~ msgstr[0] "мин."
+-#~ msgstr[1] "мин."
+-#~ msgstr[2] "мин."
+-
+-#~ msgid "min"
+-#~ msgid_plural "mins"
+-#~ msgstr[0] "мин."
+-#~ msgstr[1] "мин."
+-#~ msgstr[2] "мин."
++msgstr "Выбор абсолютного времени пробуждения"
+-- 
+2.45.2
+
