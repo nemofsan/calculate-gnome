@@ -1,7 +1,7 @@
 # Calculate format=diff
-From fde31f4144d7df78e3606d48f8e5f818e2f65fad Mon Sep 17 00:00:00 2001
+From dd0d643c5f1dffdd84c46d004f281fc01838e320 Mon Sep 17 00:00:00 2001
 From: nemofsan <nemofsan@yandex.ru>
-Date: Sun, 17 Nov 2024 17:14:47 +0300
+Date: Wed, 20 Nov 2024 23:27:01 +0300
 Subject: [PATCH] Russian translations for Shutdown Timer package
 
 ---
@@ -9,7 +9,7 @@ Subject: [PATCH] Russian translations for Shutdown Timer package
  1 file changed, 157 insertions(+), 145 deletions(-)
 
 diff --git a/po/ru.po b/po/ru.po
-index b39e39a..a7c7dc4 100644
+index b39e39a..2cff91b 100644
 --- a/po/ru.po
 +++ b/po/ru.po
 @@ -1,86 +1,85 @@
@@ -29,7 +29,7 @@ index b39e39a..a7c7dc4 100644
 -"PO-Revision-Date: 2022-11-01 23:30+0100\n"
 -"Last-Translator: Daniel Neumann\n"
 -"Language-Team: Russian <LL@li.org>\n"
-+"PO-Revision-Date: 2024-11-16 12:46+0300\n"
++"PO-Revision-Date: 2024-11-20 23:23+0300\n"
 +"Last-Translator: nemofsan <nemofsan@yandex.ru>\n"
 +"Language-Team: Russian <>\n"
  "Language: ru\n"
@@ -171,7 +171,7 @@ index b39e39a..a7c7dc4 100644
 -msgstr[0] "%s мин."
 -msgstr[1] "%s мин."
 -msgstr[2] "%s мин."
-+msgstr[0] "%s минута"
++msgstr[0] "%s минуту"
 +msgstr[1] "%s минуты"
 +msgstr[2] "%s минут"
  
