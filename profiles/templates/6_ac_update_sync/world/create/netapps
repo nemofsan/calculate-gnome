@@ -1,7 +1,6 @@
 # Calculate format=world name=world
 
 #?in(os_linux_pkglist, CLDG)!=#
-app-text/wgetpaste
 net-analyzer/nmap
 net-analyzer/traceroute
 net-dns/bind-tools
