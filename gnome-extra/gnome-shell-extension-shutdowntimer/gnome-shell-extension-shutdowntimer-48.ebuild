@@ -41,8 +41,6 @@ src_compile() {
 
 src_install() {
 	einstalldocs
-	rm -f src/metadata.json.license \
-	      src/icons/shutdown-timer-symbolic.svg.license || die
 	insinto /usr/share/glib-2.0/schemas
 	doins src/schemas/*.xml
 	rm -rf src/schemas || die
