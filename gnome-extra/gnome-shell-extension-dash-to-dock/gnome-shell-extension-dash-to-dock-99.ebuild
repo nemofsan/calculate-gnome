@@ -13,7 +13,7 @@ SRC_URI="https://github.com/micheleg/${MY_PN}/archive/${MY_P/${MY_PN}-/}.tar.gz 
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 IUSE=""
 
 COMMON_DEPEND="dev-libs/glib:2"

@@ -14,7 +14,7 @@ SRC_URI="https://github.com/mukul29/${MY_PN}/archive/${COMMIT}.tar.gz -> ${P}.ta
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 IUSE=""
 
 COMMON_DEPEND="
