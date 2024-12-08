@@ -1,6 +1,10 @@
 # Calculate format=world name=world
 
 #?in(os_linux_pkglist, CLDG)!=#
+app-text/wgetpaste
+#in#
+
+#?in(os_linux_pkglist, CLDG)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
 net-dns/bind-tools
@@ -18,4 +22,3 @@ net-misc/remmina
 net-p2p/transmission
 x11-misc/x11vnc
 #in#
-
