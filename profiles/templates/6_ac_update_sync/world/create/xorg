@@ -7,4 +7,3 @@ app-misc/xorg-meta
 #?in(os_linux_pkglist, CLDG)!=#
 app-i18n/uim
 #in#
-

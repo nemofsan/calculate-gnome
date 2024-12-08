@@ -16,7 +16,6 @@ net-print/rastertospl
 app-admin/system-config-printer
 #in#
 
-
 #?in(os_linux_pkglist, CLDG)!=#
 media-gfx/simple-scan
 #in#

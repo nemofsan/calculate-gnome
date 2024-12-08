@@ -7,4 +7,3 @@ sys-firmware/nvidia-firmware
 #?in(os_linux_pkglist, CLDG)!=#
 media-gfx/imagemagick
 #in#
-

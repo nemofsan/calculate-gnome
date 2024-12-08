@@ -19,4 +19,3 @@ x11-themes/adwaita-qt
 #?in(os_linux_pkglist, CLDG)!=#
 x11-misc/qt5ct
 #in#
-
