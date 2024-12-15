@@ -1,4 +1,4 @@
-# Calculate format=diff merge(gnome-base/gnome-control-center)==45.3,45.4
+# Calculate format=diff merge(gnome-base/gnome-control-center)==45.3-r1,45.4-r1
 From 1e85d7bd8db5fef704190e8fa1510a47aec37de4 Mon Sep 17 00:00:00 2001
 From: nemofsan <nemofsan@yandex.ru>
 Date: Thu, 9 May 2024 00:43:14 +0300
