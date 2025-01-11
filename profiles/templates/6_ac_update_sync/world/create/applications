@@ -5,7 +5,7 @@ app-office/libreoffice
 #in#
 
 #?in(os_linux_pkglist, CLDG)!=#
-app-text/fbreader
+app-text/foliate
 #in#
 
 #?in(os_linux_pkglist, CLDG)!=#
