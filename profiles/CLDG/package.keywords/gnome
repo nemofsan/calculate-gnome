@@ -2,14 +2,14 @@
 
 ~app-text/evince-46.3.1 amd64
 
-~dev-cpp/gtkmm-4.12.0 ~amd64
+~dev-cpp/gtkmm-4.14.0 ~amd64
 
-~dev-lang/vala-0.56.16 amd64
+~dev-lang/vala-0.56.17 amd64
 
 ~dev-libs/glib-2.80.5-r1 amd64
 ~dev-libs/gobject-introspection-1.80.1-r3 amd64
 ~dev-libs/gobject-introspection-common-1.80.1 amd64
-~dev-libs/vala-common-0.56.16 amd64
+~dev-libs/vala-common-0.56.17 amd64
 
 ~dev-python/pygobject-3.50.0 amd64
 
@@ -43,7 +43,7 @@
 
 ~gui-apps/gnome-console-46.0 amd64
 
-~gui-libs/gtk-4.12.5-r2 amd64
+~gui-libs/gtk-4.14.4-r1 amd64
 ~gui-libs/libadwaita-1.5.3 amd64
 ~gui-libs/vte-0.76.3 amd64
 ~gui-libs/vte-common-0.76.3 amd64
@@ -67,4 +67,4 @@
 ~x11-themes/adwaita-icon-theme-legacy-46.2 amd64
 ~x11-themes/gnome-backgrounds-46.0 amd64
 
-~x11-wm/mutter-46.7 amd64
+~x11-wm/mutter-46.7-r1 amd64
