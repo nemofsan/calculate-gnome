@@ -1,12 +1,10 @@
 # Calculate format=world name=world
 
 #?in(os_linux_pkglist, CLDG)!=#
-net-print/cndrvcups-common-lb
 net-print/cnijfilter2
 net-print/cups
 net-print/epson-inkjet-printer-escpr
 net-print/foomatic-db-engine
-net-print/gutenprint
 net-print/hplip
 net-print/hplip-plugin
 net-print/rastertospl

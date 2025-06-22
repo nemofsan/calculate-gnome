@@ -54,6 +54,7 @@ sys-process/lsof
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
+app-crypt/libu2f-host
 sys-apps/hdparm
 sys-apps/inxi
 sys-apps/keyexec
