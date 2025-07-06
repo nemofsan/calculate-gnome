@@ -1,2 +1,2 @@
 # exactly-one-of ( gtk qt5 )
-media-libs/libmediaart gtk -qt5
+media-libs/libmediaart gtk -qt6
