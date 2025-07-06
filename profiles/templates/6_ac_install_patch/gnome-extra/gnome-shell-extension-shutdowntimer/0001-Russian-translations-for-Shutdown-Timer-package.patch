@@ -1,4 +1,4 @@
-# Calculate format=diff
+# Calculate format=diff merge(gnome-extra/gnome-shell-extension-shutdowntimer)==48
 From dd0d643c5f1dffdd84c46d004f281fc01838e320 Mon Sep 17 00:00:00 2001
 From: nemofsan <nemofsan@yandex.ru>
 Date: Wed, 20 Nov 2024 23:27:01 +0300
