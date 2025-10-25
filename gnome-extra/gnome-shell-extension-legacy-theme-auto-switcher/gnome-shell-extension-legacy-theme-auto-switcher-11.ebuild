@@ -6,7 +6,7 @@ inherit gnome2-utils
 
 MY_PN="${PN/gnome-shell-extension-/}-gnome-extension"
 
-COMMIT="dbffe84ca2c71c8ff8cba44f857b33cc36efdd4d"
+COMMIT="09bb3cf10f8787c17f459af53fbc41d252876532"
 
 DESCRIPTION="Changes the GTK3 (legacy) theme variant to light/dark on Gnome 42 when the scheme is changed from Settings."
 HOMEPAGE="https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension"
