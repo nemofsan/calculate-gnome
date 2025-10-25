@@ -7,6 +7,9 @@ src_configure() {
 	append-flags -fno-strict-aliasing
 	filter-lto
 
+	use X || append-cppflags -DGENTOO_GTK_HIDE_X11
+	use wayland || append-cppflags -DGENTOO_GTK_HIDE_WAYLAND
+
 	local emesonargs=(
 		$(meson_use bluetooth)
 		-Dcups=$(usex cups enabled disabled)
