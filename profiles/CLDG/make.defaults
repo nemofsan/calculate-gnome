@@ -9,8 +9,7 @@ USE="${USE} gstreamer"
 USE="${USE} nautilus"
 USE="${USE} tracker"
 
-USEPKG_EXCLUDE="--usepkg-exclude='gnome-base/gnome-control-center
-                                  x11-base/xorg-server'"
+USEPKG_EXCLUDE="--usepkg-exclude='gnome-base/gnome-control-center'"
 
 EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} ${USEPKG_EXCLUDE}"
 
