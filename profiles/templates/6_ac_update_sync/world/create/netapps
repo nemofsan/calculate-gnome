@@ -7,7 +7,6 @@ app-text/wgetpaste
 #?in(os_linux_pkglist, CLDG)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
-net-dns/bind-tools
 net-misc/chrony
 net-misc/whois
 #in#
