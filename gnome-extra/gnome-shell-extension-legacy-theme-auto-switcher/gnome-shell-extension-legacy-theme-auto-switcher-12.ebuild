@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,7 +6,7 @@ inherit gnome2-utils
 
 MY_PN="${PN/gnome-shell-extension-/}-gnome-extension"
 
-COMMIT="3d6b167b458893e1aa2abc77fb8df0e17fc137b8"
+COMMIT="e82edbefb21990da42c8a0f681165fa0742d92f3"
 
 DESCRIPTION="Changes the GTK3 (legacy) theme variant to light/dark on Gnome 42 when the scheme is changed from Settings."
 HOMEPAGE="https://github.com/mukul29/legacy-theme-auto-switcher-gnome-extension"
