@@ -51,6 +51,8 @@
 ~media-gfx/eog-45.4 amd64
 ~media-gfx/gnome-font-viewer-46.0 amd64
 
+~media-plugins/grilo-plugins-0.3.18-r1 amd64
+
 ~media-sound/gnome-music-46.1 amd64
 
 ~net-libs/gnome-online-accounts-3.50.4 amd64
