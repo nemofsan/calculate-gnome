@@ -1,72 +1,82 @@
-~app-editors/gnome-text-editor-46.3 amd64
+~app-editors/gnome-text-editor-49.2 amd64
 
 ~app-text/evince-46.3.1 amd64
+~app-text/libspelling-0.4.10 amd64
 
-~dev-cpp/gtkmm-4.14.0 ~amd64
+~dev-cpp/gtkmm-4.20.0 ~amd64
 
-~dev-lang/vala-0.56.17 amd64
+~dev-lang/vala-0.56.19 amd64
 
-~dev-libs/glib-2.80.5-r1 amd64
-~dev-libs/gobject-introspection-1.80.1-r3 amd64
-~dev-libs/gobject-introspection-common-1.80.1 amd64
-~dev-libs/vala-common-0.56.17 amd64
+~dev-libs/folks-0.15.12 amd64
+~dev-libs/gjs-1.88.0-r1 amd64
+~dev-libs/glib-2.88.2 amd64
+~dev-libs/gobject-introspection-1.86.0 amd64
+~dev-libs/gobject-introspection-common-1.86.0 amd64
+~dev-libs/vala-common-0.56.19 amd64
 
-~dev-python/pygobject-3.50.0 amd64
+~dev-python/pygobject-3.50.1 amd64
 
-~dev-util/gdbus-codegen-2.80.5 amd64
-~dev-util/glib-utils-2.80.5 amd64
+~dev-util/gdbus-codegen-2.88.2 amd64
+~dev-util/glib-utils-2.88.2 amd64
 
-~gnome-base/dconf-editor-45.0.1 amd64
-~gnome-base/gdm-46.2-r2 amd64
-~gnome-base/gnome-control-center-46.4-r1 amd64
-~gnome-base/gnome-keyring-46.2 amd64
-~gnome-base/gnome-session-46.0-r1 amd64
-~gnome-base/gnome-settings-daemon-46.0-r2 amd64
-~gnome-base/gnome-shell-46.7 amd64
-~gnome-base/gsettings-desktop-schemas-46.1 amd64
+~gnome-base/dconf-editor-49.0 amd64
+~gnome-base/gdm-49.2-r2 amd64
+~gnome-base/gnome-control-center-49.7 amd64
+~gnome-base/gnome-keyring-48.0-r1 amd64
+~gnome-base/gnome-session-49.2 amd64
+~gnome-base/gnome-session-openrc-49.2 amd64
+~gnome-base/gnome-settings-daemon-49.1-r1 amd64
+~gnome-base/gnome-shell-49.7 amd64
+~gnome-base/gsettings-desktop-schemas-49.1 amd64
 ~gnome-base/libgtop-2.41.3 amd64
-~gnome-base/nautilus-46.2 amd64
+~gnome-base/nautilus-49.6 amd64
 
-~gnome-extra/gnome-boxes-46.1 amd64
-~gnome-extra/gnome-calculator-46.1 amd64
-~gnome-extra/gnome-calendar-46.1 amd64
-~gnome-extra/gnome-characters-46.0 amd64
-~gnome-extra/gnome-clocks-46.0 amd64
-~gnome-extra/gnome-contacts-46.0 amd64
-~gnome-extra/gnome-shell-extensions-46.2 amd64
-~gnome-extra/gnome-system-monitor-46.0-r1 amd64
-~gnome-extra/gnome-tweaks-46.1-r1 amd64
-~gnome-extra/gnome-user-docs-46.4 amd64
-~gnome-extra/gnome-weather-46.0 amd64
+~gnome-extra/evolution-data-server-3.60.2 amd64
+~gnome-extra/gnome-boxes-49.1 amd64
+~gnome-extra/gnome-calculator-49.2-r1 amd64
+~gnome-extra/gnome-calendar-49.1 amd64
+~gnome-extra/gnome-characters-49.1 amd64
+~gnome-extra/gnome-clocks-49.0 amd64
+~gnome-extra/gnome-contacts-49.0-r2 amd64
+~gnome-extra/gnome-shell-extensions-49.0 amd64
+#~gnome-extra/gnome-software-49.4 amd64
+~gnome-extra/gnome-system-monitor-49.1 amd64
+~gnome-extra/gnome-tweaks-49.0 amd64
+~gnome-extra/gnome-user-docs-49.7 amd64
+~gnome-extra/gnome-weather-50.0 amd64
 ~gnome-extra/sushi-46.0 amd64
-~gnome-extra/tecla-46.0 amd64
+~gnome-extra/tecla-49.0 amd64
 
-~gui-apps/gnome-console-46.0 amd64
+~gui-apps/gnome-console-49.2 amd64
 
-~gui-libs/gtk-4.14.4-r1 amd64
-~gui-libs/libadwaita-1.5.3 amd64
-~gui-libs/vte-0.76.3 amd64
-~gui-libs/vte-common-0.76.3 amd64
+~gui-libs/gtk-4.20.4 amd64
+~gui-libs/libadwaita-1.8.6 amd64
+~gui-libs/vte-0.82.3 amd64
+~gui-libs/vte-common-0.82.3 amd64
 
-~media-gfx/eog-45.4 amd64
-~media-gfx/gnome-font-viewer-46.0 amd64
+~mail-client/evolution-3.60.2 amd64
 
-~media-plugins/grilo-plugins-0.3.18-r1 amd64
+~media-gfx/eog-47.0 amd64
+~media-gfx/gnome-font-viewer-49.0 amd64
 
-~media-sound/gnome-music-46.1 amd64
+~media-libs/glycin-2.1.1-r1 amd64
 
-~net-libs/gnome-online-accounts-3.50.4 amd64
+~media-plugins/grilo-plugins-0.3.18-r2 amd64
 
-~net-wireless/gnome-bluetooth-46.2 amd64
+~media-sound/gnome-music-49.1 amd64
 
-~sys-apps/baobab-46.0 amd64
+~net-libs/gnome-online-accounts-3.56.5 amd64
+
+~net-wireless/gnome-bluetooth-47.2 amd64
+
+~sys-apps/baobab-49.1 amd64
 ~sys-apps/gnome-disk-utility-46.1-r1 amd64
-~sys-apps/xdg-desktop-portal-gnome-46.2 amd64
+~sys-apps/xdg-desktop-portal-gnome-49.0 amd64
 
-~x11-libs/vte-0.76.3 amd64
+~x11-libs/vte-0.82.3 amd64
 
-~x11-themes/adwaita-icon-theme-46.2 amd64
+~x11-themes/adwaita-icon-theme-49.0 amd64
 ~x11-themes/adwaita-icon-theme-legacy-46.2 amd64
-~x11-themes/gnome-backgrounds-46.0 amd64
+~x11-themes/gnome-backgrounds-49.0 amd64
 
-~x11-wm/mutter-46.7-r1 amd64
+~x11-wm/mutter-49.6 amd64
