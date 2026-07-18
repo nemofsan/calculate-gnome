@@ -1,1 +1,1 @@
-# Calculate path=/etc name=pam.d mergepkg()!=
+# Calculate append=skip mergepkg()!=
